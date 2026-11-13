@@ -2,6 +2,7 @@ import AudioDSP
 import CoreAudio
 import Foundation
 import OSLog
+import MixerLogic
 
 /// Owns one private tap and aggregate. All lifecycle methods run on the main thread;
 /// only the C IOProc touches sample memory. No vendor binary is loaded.
@@ -32,9 +33,10 @@ final class ProcessAudioSession {
     var peak: Float { MSCProcessorPeak(processor) }
     var cycles: UInt64 { MSCProcessorCycles(processor) }
     var faults: UInt64 { MSCProcessorFaults(processor) }
+    var clippedFrames: UInt64 { MSCProcessorClippedFrames(processor) }
 
-    func start(gain: Float) throws {
-        do { try createPipeline(gain: gain) }
+    func start(gain: Float, equalizer: EqualizerSettings) throws {
+        do { try createPipeline(gain: gain, equalizer: equalizer) }
         catch {
             let startError = error
             do { try stop() }
@@ -43,7 +45,7 @@ final class ProcessAudioSession {
         }
     }
 
-    private func createPipeline(gain: Float) throws {
+    private func createPipeline(gain: Float, equalizer: EqualizerSettings) throws {
         guard aggregate == 0, tap == 0, processor == nil else {
             throw AudioFailure(operation: "Phiên âm thanh đã tồn tại", status: nil)
         }
@@ -100,6 +102,7 @@ final class ProcessAudioSession {
             throw AudioFailure(operation: "Không khởi tạo được bộ xử lý âm thanh", status: nil)
         }
         processor = created
+        setEqualizer(equalizer)
         try HAL.check(MSCProcessorRegister(aggregate, created, &ioProc), "Không đăng ký được bộ xử lý âm thanh")
         try HAL.check(AudioDeviceStart(aggregate, ioProc), "Không bắt đầu được audio. Cho phép ghi âm hệ thống trong Quyền riêng tư & Bảo mật")
         Self.log.info("Audio session started, sample rate \(self.sampleRate)")
@@ -118,6 +121,13 @@ final class ProcessAudioSession {
     }
 
     func setGain(_ gain: Float) { MSCProcessorSetGain(processor, gain) }
+    func setEqualizer(_ settings: EqualizerSettings) {
+        let gains = settings.gains.map(Float.init)
+        gains.withUnsafeBufferPointer {
+            MSCProcessorSetEqualizer(processor, settings.enabled, $0.baseAddress, UInt32($0.count),
+                                     Float(settings.preampDB), settings.automaticHeadroom)
+        }
+    }
 
     func stop() throws {
         var failures: [String] = []

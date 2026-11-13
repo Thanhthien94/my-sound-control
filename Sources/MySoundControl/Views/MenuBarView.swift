@@ -27,7 +27,7 @@ struct MenuBarView: View {
                     NSApp.orderFrontStandardAboutPanel(options: [
                         .applicationName: "My Sound Control",
                         .applicationVersion: Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "Preview",
-                        .credits: NSAttributedString(string: "Ứng dụng âm thanh độc lập cho macOS.\nBản preview: mixer stereo, chưa có EQ/AirPlay.")
+                        .credits: NSAttributedString(string: "Ứng dụng âm thanh độc lập cho macOS.\nMixer stereo, EQ 10 băng và tắt tiếng hẹn giờ.\nBản preview: chưa có plugin AU/AirPlay đa thiết bị.")
                     ])
                     NSApp.activate(ignoringOtherApps: true)
                 }

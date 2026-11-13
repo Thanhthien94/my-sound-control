@@ -1,9 +1,11 @@
 import AppKit
 import SwiftUI
+import MixerLogic
 
 struct ApplicationRow: View {
     @ObservedObject var store: MixerStore
     let app: AudioApplication
+    @State private var showEqualizer = false
     private var preference: MixerPreference { store.preference(app.id) }
     private var active: Bool { store.activeIDs.contains(app.id) }
 
@@ -21,6 +23,10 @@ struct ApplicationRow: View {
                         .font(.caption).foregroundStyle(active ? Color.accentColor : Color.secondary)
                 }
                 Spacer()
+                Button { showEqualizer = true } label: {
+                    Label("EQ", systemImage: "slider.vertical.3")
+                }.help("Equalizer cho \(app.name)")
+                    .foregroundStyle(preference.equalizer.enabled ? Color.accentColor : Color.secondary)
                 Button { store.update(app.id) { $0.favorite.toggle() } } label: {
                     Image(systemName: preference.favorite ? "star.fill" : "star")
                         .foregroundStyle(preference.favorite ? Color.yellow : Color.secondary)
@@ -77,6 +83,7 @@ struct ApplicationRow: View {
                     .textSelection(.enabled)
             }
         }.padding(.vertical, 3)
+            .sheet(isPresented: $showEqualizer) { EqualizerView(store: store, app: app) }
     }
 
     private var levelText: String {

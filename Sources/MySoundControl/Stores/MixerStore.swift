@@ -15,6 +15,7 @@ final class MixerStore: ObservableObject {
     @Published private(set) var preferences: [String: MixerPreference] = [:]
     @Published private(set) var activeIDs: Set<String> = []
     @Published private(set) var peaks: [String: Float] = [:]
+    @Published private(set) var clippedFrames: [String: UInt64] = [:]
     @Published private(set) var appErrors: [String: String] = [:]
     @Published private(set) var pendingCleanupCount = 0
     @Published private(set) var muteSecondsRemaining: [String: Int] = [:]
@@ -43,6 +44,8 @@ final class MixerStore: ObservableObject {
                 self.advanceTimedMutes()
                 let levels = self.sessions.mapValues(\.peak)
                 if self.peaks != levels { self.peaks = levels }
+                let clips = self.sessions.mapValues(\.clippedFrames)
+                if self.clippedFrames != clips { self.clippedFrames = clips }
                 self.tick += 1
                 if self.tick % 10 == 0 { self.refresh() }
             }
@@ -58,11 +61,14 @@ final class MixerStore: ObservableObject {
     func update(_ id: String, _ body: (inout MixerPreference) -> Void) {
         var value = preference(id)
         let wasMuted = value.muted
+        let previousEQ = value.equalizer
         body(&value)
         if value.muted != wasMuted { cancelTimedMute(id) }
         value.volume = value.volume.isFinite ? max(0, min(1, value.volume)) : 1
+        value.equalizer.normalize()
         preferences[id] = value
         applyGain(id)
+        if previousEQ != value.equalizer { sessions[id]?.setEqualizer(value.equalizer) }
         // PIDs are reused by macOS. Never restore a process-only preference onto
         // an unrelated application after relaunch; only bundle identities persist.
         do { UserDefaults.standard.set(try JSONEncoder().encode(preferences.filter { !$0.key.hasPrefix("pid:") }), forKey: preferenceKey) }
@@ -192,7 +198,7 @@ final class MixerStore: ObservableObject {
         }
         let session = ProcessAudioSession(application: app, output: output, capture: capture, followsDefault: preference.outputUID.isEmpty)
         do {
-            try session.start(gain: Float(preference.muted ? 0 : preference.volume))
+            try session.start(gain: Float(preference.muted ? 0 : preference.volume), equalizer: preference.equalizer)
             sessions[app.id] = session
             activeIDs.insert(app.id)
             appErrors[app.id] = nil
@@ -211,6 +217,7 @@ final class MixerStore: ObservableObject {
         guard let session = sessions.removeValue(forKey: id) else { return }
         activeIDs.remove(id)
         peaks[id] = nil
+        clippedFrames[id] = nil
         idleSince[id] = nil
         lastCycles[id] = nil
         do { try session.stop() }

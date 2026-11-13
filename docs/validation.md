@@ -1,5 +1,14 @@
 # Validation
 
+## 0.1.0-preview.4 — 13/11/2026
+
+- 21 tests: 7 model/timer và 14 DSP; EQ center response ở 44,1/48/96 kHz, gain −12/−6/+6/+12 dB với sai số <0,15 dB, tách kênh, flat/bypass identity, preamp, chuyển cấu hình, mute, headroom/clipping, malformed values và cập nhật đồng thời. Model tests xác nhận đọc preferences cũ và lưu EQ riêng từng app.
+- Focused concurrent publication/render test qua Thread Sanitizer (`--sanitize thread`, scratch `.build/eq-tsan`), không có báo cáo race trong lần thử. Đây không phải chứng minh tất cả interleavings.
+- C syntax check `-std=c11 -Wall -Wextra -Werror` qua cho AudioDSP.c và Equalizer.c.
+- CUA phát hiện SwiftUI Slider xoay không render track; thay bằng NSSlider qua NSViewRepresentable và kiểm tra lại hình/AX. Có 10 fader hiển thị và chỉnh được.
+- Tone 1 kHz stereo WAV nhỏ qua afplay, output 44,1 kHz: meter −50 dBFS; bật EQ, auto-headroom off, băng 1 kHz −6 dB → −56 dBFS; bypass → −50 dBFS. Tắt Mixer → âm gốc. Không đổi default device hoặc điều khiển Chrome.
+- Chưa nghe A/B, đo latency/true peak, benchmark CPU ở nhiều app, profile tai nghe hoặc kiểm tra mọi sample rate/hardware. Sample clamp có thể gây méo; không phải limiter.
+
 ## 0.1.0-preview.3 — 13/11/2026
 
 - Cài ZIP của preview.2 tải từ GitHub vào `/Applications/MySoundControl.app`; checksum, signature strict và mở chạy qua.

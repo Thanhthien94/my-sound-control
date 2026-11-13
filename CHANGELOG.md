@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-preview.4
+
+- Per-application stereo 10-band EQ (31.25 Hz–16 kHz, ±12 dB, 0.5 dB steps), bypass, reset and five tonal presets.
+- Per-app persistence with backward-compatible decoding of existing volume/mute/route/favorites.
+- Preamp −24…0 dB, optional response-based automatic headroom and sample-peak clipping protection/counter.
+- Independent filter states and SPSC triple-buffer configuration handoff; 20 ms dual-bank crossfades without render-time allocation, locks or coefficient calculation.
+- Native AppKit vertical faders and dedicated EQ sheet.
+- Response, bypass, preamp, transitions, clipping, sample-rate, concurrent publication and preference migration tests.
+
 ## 0.1.0-preview.3
 
 - Per-application timed mute: 30 seconds, 1 minute, 2 minutes, countdown and immediate unmute.

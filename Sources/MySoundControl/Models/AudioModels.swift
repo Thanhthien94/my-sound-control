@@ -18,10 +18,3 @@ struct AudioApplication: Identifiable, Equatable {
     let pid: pid_t
     let isPlaying: Bool
 }
-
-struct MixerPreference: Codable {
-    var volume: Double = 1
-    var muted = false
-    var favorite = false
-    var outputUID: String = ""
-}

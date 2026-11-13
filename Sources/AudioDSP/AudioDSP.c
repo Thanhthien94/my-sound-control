@@ -1,4 +1,5 @@
 #include "AudioDSP.h"
+#include "Equalizer.h"
 #include <math.h>
 #include <stdatomic.h>
 #include <stdlib.h>
@@ -9,6 +10,8 @@ struct MSCProcessor {
     _Atomic float peak;
     _Atomic uint64_t cycles;
     _Atomic uint64_t faults;
+    _Atomic uint64_t clippedFrames;
+    MSCEQ equalizer;
     float current; // Audio thread only.
     float coefficient;
 };
@@ -25,8 +28,10 @@ MSCProcessor *MSCProcessorCreate(double sampleRate, float initialGain) {
     atomic_init(&p->peak, 0);
     atomic_init(&p->cycles, 0);
     atomic_init(&p->faults, 0);
+    atomic_init(&p->clippedFrames, 0);
     if (!atomic_is_lock_free(&p->target) || !atomic_is_lock_free(&p->peak) ||
-        !atomic_is_lock_free(&p->cycles) || !atomic_is_lock_free(&p->faults)) {
+        !atomic_is_lock_free(&p->cycles) || !atomic_is_lock_free(&p->faults) ||
+        !atomic_is_lock_free(&p->clippedFrames) || !MSCEQInit(&p->equalizer, sampleRate)) {
         free(p); return NULL;
     }
     p->current = safeGain(initialGain);
@@ -35,6 +40,13 @@ MSCProcessor *MSCProcessorCreate(double sampleRate, float initialGain) {
 }
 
 void MSCProcessorDestroy(MSCProcessor *p) { free(p); }
+void MSCProcessorSetEqualizer(MSCProcessor *p, bool enabled, const float *gains,
+                             uint32_t count, float preampDB, bool automaticHeadroom) {
+    if (p) MSCEQPublish(&p->equalizer, enabled, gains, count, preampDB, automaticHeadroom);
+}
+uint64_t MSCProcessorClippedFrames(const MSCProcessor *p) {
+    return p ? atomic_load_explicit(&p->clippedFrames, memory_order_relaxed) : 0;
+}
 void MSCProcessorSetGain(MSCProcessor *p, float gain) {
     if (p) atomic_store_explicit(&p->target, safeGain(gain), memory_order_relaxed);
 }
@@ -88,13 +100,21 @@ void MSCProcessorRender(MSCProcessor *p, const AudioBufferList *input, AudioBuff
         return;
     }
     const float target = atomic_load_explicit(&p->target, memory_order_relaxed);
+    MSCEQBeginBlock(&p->equalizer);
+    uint64_t clipped = 0;
     float peak = 0;
     for (uint32_t f = 0; f < frames; f++) {
         p->current += (target - p->current) * p->coefficient;
         float l = in[0].data[f * in[0].stride];
         float r = in[1].data[f * in[1].stride];
-        l = isfinite(l) ? l * p->current : 0;
-        r = isfinite(r) ? r * p->current : 0;
+        l = isfinite(l) ? l : 0;
+        r = isfinite(r) ? r : 0;
+        bool protect = MSCEQProcess(&p->equalizer, &l, &r);
+        l *= p->current; r *= p->current;
+        if (protect) {
+            if (fabsf(l) > 1 || fabsf(r) > 1) clipped++;
+            l = fmaxf(-1, fminf(1, l)); r = fmaxf(-1, fminf(1, r));
+        }
         if (no == 1) {
             out[0].data[f * out[0].stride] = 0.5f * (l + r);
         } else {
@@ -104,6 +124,7 @@ void MSCProcessorRender(MSCProcessor *p, const AudioBufferList *input, AudioBuff
         peak = fmaxf(peak, fmaxf(fabsf(l), fabsf(r)));
     }
     atomic_store_explicit(&p->peak, peak, memory_order_relaxed);
+    atomic_fetch_add_explicit(&p->clippedFrames, clipped, memory_order_relaxed);
 }
 
 static OSStatus MSCAudioIOProc(AudioObjectID device, const AudioTimeStamp *now,
