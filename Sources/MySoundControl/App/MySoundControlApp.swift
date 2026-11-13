@@ -5,6 +5,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         // Menu-bar utility: no Dock icon. The mixer window appears on first launch.
         NSApp.setActivationPolicy(.accessory)
+        if let icon = AppBrand.icon { NSApp.applicationIconImage = icon }
         NSApp.activate(ignoringOtherApps: true)
     }
     func applicationWillTerminate(_ notification: Notification) {

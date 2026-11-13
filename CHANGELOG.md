@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0-preview.2
+
+- Original waveform/fader icon using the SkyTruong palette, matching the My Fan Control visual family.
+- Bundled macOS ICNS and mixer header artwork, with reproducible local raster exports.
+- Audio features and limitations remain as in Preview 1.
+
 ## 0.1.0-preview.1
 
 - Initial independent menu-bar mixer and Vietnamese UI.

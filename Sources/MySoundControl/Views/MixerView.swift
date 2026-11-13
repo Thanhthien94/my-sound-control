@@ -12,8 +12,7 @@ struct MixerView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 14) {
-                Image(systemName: "waveform.circle.fill")
-                    .font(.system(size: 40)).foregroundStyle(.tint)
+                AppMark().frame(width: 48, height: 48)
                 VStack(alignment: .leading, spacing: 3) {
                     Text("My Sound Control").font(.title2.bold())
                     Text("Âm thanh theo cách của bạn").foregroundStyle(.secondary)

@@ -29,6 +29,7 @@ BIN_DIR="$(swift build --configuration "$CONFIGURATION" ${MSC_SWIFT_ARGS[@]+"${M
 mkdir -p "$APP_BUNDLE/Contents/MacOS" "$APP_BUNDLE/Contents/Resources"
 cp "$BIN_DIR/$APP_NAME" "$APP_BUNDLE/Contents/MacOS/$APP_NAME"
 cp LICENSE PRIVACY.md THIRD_PARTY_NOTICES.md "$APP_BUNDLE/Contents/Resources/"
+cp assets/brand/AppIcon.icns "$APP_BUNDLE/Contents/Resources/AppIcon.icns"
 APP_BUILD_NUMBER="$(git rev-list --count HEAD 2>/dev/null || echo 1)"
 SOURCE_REVISION="$(git rev-parse --verify HEAD 2>/dev/null || echo uncommitted)"
 cat > "$APP_BUNDLE/Contents/Info.plist" <<PLIST
@@ -39,6 +40,7 @@ cat > "$APP_BUNDLE/Contents/Info.plist" <<PLIST
 <key>CFBundleIdentifier</key><string>$BUNDLE_ID</string>
 <key>CFBundleName</key><string>My Sound Control</string>
 <key>CFBundleDisplayName</key><string>My Sound Control</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
 <key>CFBundleShortVersionString</key><string>${APP_RELEASE%%-*}</string>
 <key>CFBundleVersion</key><string>$APP_BUILD_NUMBER</string>
 <key>CFBundlePackageType</key><string>APPL</string>

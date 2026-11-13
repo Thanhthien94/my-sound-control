@@ -5,7 +5,9 @@
 - [Phân tích SoundSource bằng REA](docs/soundsource-analysis.vi.md)
 - [Bằng chứng và nguồn nghiên cứu](docs/research/)
 
-## 0.1.0-preview.1
+## 0.1.0-preview.2
+
+Logo waveform/fader theo palette SkyTruong, cùng phong cách My Fan Control; bộ icon macOS và logo trong cửa sổ mixer đã tích hợp.
 
 - Menu bar và cửa sổ mixer tiếng Việt; không có icon Dock.
 - Chọn thiết bị output, microphone, thông báo; volume/mute phần cứng khi có master control.

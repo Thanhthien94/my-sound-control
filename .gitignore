@@ -7,3 +7,4 @@ docs/research/official-manual.txt
 docs/research/apple-*.json
 docs/research/rea-macho.json
 docs/research/rea-plist.json
+assets/brand/*-generated-*
