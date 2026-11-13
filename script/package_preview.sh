@@ -2,6 +2,7 @@
 set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
+source script/toolchain.sh
 if [[ -n "$(git status --porcelain --untracked-files=normal)" ]]; then
   echo 'Package previews from a clean committed tree.' >&2; exit 1
 fi
