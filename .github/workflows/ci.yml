@@ -1,0 +1,29 @@
+name: macOS CI
+on:
+  push:
+    branches: [main, develop, 'feature/**', 'fix/**', 'release/**']
+  pull_request:
+    branches: [main, develop]
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build-and-test:
+    runs-on: macos-15-intel
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select installed Xcode
+        run: echo "DEVELOPER_DIR=$(xcode-select -p)" >> "$GITHUB_ENV"
+      - name: Test DSP
+        run: ./script/test.sh
+      - name: Build and package Apple Silicon preview
+        run: ./script/package_preview.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MySoundControl-preview-arm64
+          path: |
+            dist/*.dmg
+            dist/*.zip
+            dist/SHA256SUMS.txt

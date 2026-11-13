@@ -1,0 +1,9 @@
+.build/
+.swiftpm/
+dist/
+.DS_Store
+docs/research/rea-evidence.json
+docs/research/official-manual.txt
+docs/research/apple-*.json
+docs/research/rea-macho.json
+docs/research/rea-plist.json

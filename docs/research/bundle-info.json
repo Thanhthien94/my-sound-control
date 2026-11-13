@@ -1,0 +1,88 @@
+{
+  "method": "Python plistlib fallback; REA inspect_plist failed",
+  "value": {
+    "BuildMachineOSBuild": "25G241",
+    "CFBundleDevelopmentRegion": "English",
+    "CFBundleExecutable": "SoundSource",
+    "CFBundleGetInfoString": "6.2.0 ©2026 Rogue Amoeba Software, Inc.",
+    "CFBundleIconFile": "AppIcon.icns",
+    "CFBundleIdentifier": "com.rogueamoeba.soundsource",
+    "CFBundleInfoDictionaryVersion": "6.0",
+    "CFBundleName": "SoundSource",
+    "CFBundlePackageType": "APPL",
+    "CFBundleShortVersionString": "6.2.0",
+    "CFBundleSignature": "????",
+    "CFBundleSupportedPlatforms": [
+      "MacOSX"
+    ],
+    "CFBundleVersion": "6.2.0",
+    "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+    "DTPlatformBuild": "25F70",
+    "DTPlatformName": "macosx",
+    "DTPlatformVersion": "26.5",
+    "DTSDKBuild": "25F70",
+    "DTSDKName": "macosx26.5",
+    "DTXcode": "2660",
+    "DTXcodeBuild": "17F113",
+    "LSMinimumSystemVersion": "15.0",
+    "LSUIElement": true,
+    "NSAccentColorName": "AccentColor",
+    "NSAppTransportSecurity": {
+      "NSAllowsArbitraryLoads": true
+    },
+    "NSAppleEventsUsageDescription": "SoundSource requires Automation access so it can retrieve track title information.",
+    "NSAudioCaptureUsageDescription": "Capturing audio from this input requires approval. Click “Allow” to allow Audio Hijack to capture audio.",
+    "NSBluetoothAlwaysUsageDescription": "Click “Allow” to permit SoundSource to configure and manage Bluetooth audio devices.",
+    "NSBonjourServices": [
+      "_airplay._tcp",
+      "_raop._tcp",
+      "_preflight_check._tcp"
+    ],
+    "NSHumanReadableCopyright": "©2026 Rogue Amoeba Software, Inc.",
+    "NSLocalNetworkUsageDescription": "SoundSource uses local network access to discover and connect to AirPlay devices.",
+    "NSMainNibFile": "MainMenu",
+    "NSPrincipalClass": "SSApplication",
+    "NSServices": [
+      {}
+    ],
+    "NSSupportsAutomaticGraphicsSwitching": true,
+    "RAMaximumButNotSupportedSystemVersion": "28.0",
+    "UTExportedTypeDeclarations": [
+      {
+        "UTTypeConformsTo": [
+          "com.soundsource.effect"
+        ],
+        "UTTypeDescription": "SoundSource Effect",
+        "UTTypeIcons": {},
+        "UTTypeIdentifier": "com.rogueamoeba.soundsource.effect",
+        "UTTypeTagSpecification": {
+          "public.filename-extension": [],
+          "public.mime-type": []
+        }
+      },
+      {
+        "UTTypeConformsTo": [
+          "com.soundsource.application"
+        ],
+        "UTTypeDescription": "SoundSource Application",
+        "UTTypeIcons": {},
+        "UTTypeIdentifier": "com.rogueamoeba.soundsource.application",
+        "UTTypeTagSpecification": {
+          "public.filename-extension": [],
+          "public.mime-type": []
+        }
+      },
+      {
+        "UTTypeConformsTo": [
+          "com.soundsource.device"
+        ],
+        "UTTypeDescription": "SoundSource Device",
+        "UTTypeIcons": {},
+        "UTTypeIdentifier": "com.rogueamoeba.soundsource.device",
+        "UTTypeTagSpecification": {
+          "public.filename-extension": "ssd"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,5827 @@
+[
+  {
+    "evidence_id": "ev_52b6b0bf2332f07b10a32fa521a43e4eeb71b71dff9f2042885dae2bafce79d2",
+    "subject": {
+      "architecture": "arm64",
+      "digest": {
+        "sha256": "510e2df9183256546bf11518e2c66622597f9e288c2129d167f5b0e420d7ca79"
+      },
+      "format": "mach-o",
+      "local_path": "/private/var/folders/gn/4ghmn0r95tq_49k_ysbrql0h0000gn/T/rea-extracted-329646ec-d013-4aff-b018-5df50b333202/SoundSource.app/Contents/Frameworks/SSAudio.framework/Versions/A/SSAudio",
+      "name": "SSAudio"
+    },
+    "class_records": 86,
+    "non_metaclass_records": 43,
+    "classes": [
+      {
+        "name": "SSAudioMediaKeyListener",
+        "methods": [
+          "_highPriorityTap",
+          "setEnabled:",
+          "enabled",
+          "cleanup",
+          "eventTapThread",
+          "startHealthCheckPolling",
+          "stopHealthCheckPolling",
+          "checkHealth",
+          "ensureIsHeadTap",
+          "restart",
+          "_tapEventCallbackWithProxy:type:event:source:",
+          "handleAndReleaseMediaKeyEvent:state:repeat:source:",
+          "delegate",
+          "setDelegate:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio11SSVolumePop",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio33SSAudioMediaKeyListenerController",
+        "methods": [
+          "dealloc",
+          "enabled",
+          "setEnabled:",
+          "shouldEnableForDevice",
+          "setShouldEnableForDevice:",
+          "updateEnabled",
+          "mediaKeyEvent:state:repeat:source:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio17SSAudioNodeLoader",
+        "methods": [
+          "description",
+          "dealloc",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio21SSVODuckingController",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio17SSAudioUnitPolicy",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio13SSAudioPlayer",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio19SSAudioMeterManager",
+        "methods": [
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio11SSLogReader",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio17SSAudioExclusions",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio19SSAudioTapProcessor",
+        "methods": [
+          "dealloc",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio21SSAudioCancellableBag",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio10SSAudioOSD",
+        "methods": []
+      },
+      {
+        "name": "_TtCC7SSAudio10SSAudioOSD10SSOSDPanel",
+        "methods": [
+          "canBecomeKeyWindow",
+          "canBecomeMainWindow",
+          "_hasActiveAppearance",
+          "_hasActiveControls",
+          "hasKeyAppearance",
+          "initWithContentRect:styleMask:backing:defer:"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio23OSDVolumeViewController",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio21SSAudioProcessManager",
+        "methods": [
+          "init",
+          "dealloc",
+          "needsUpdate",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio26SSAudioScreenSharingPolicy",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio15SSEnforcerState",
+        "methods": [
+          "registrationChanged",
+          "dealloc",
+          "enforcerTime",
+          "timerTick",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio7SSAudio",
+        "methods": [
+          "sampleRate",
+          "setSampleRate:",
+          "tapsEnabled",
+          "setTapsEnabled:",
+          "metersEnabled",
+          "setMetersEnabled:",
+          "multiChannel",
+          "setMultiChannel:",
+          "frames",
+          "allowDoubleCapture",
+          "setAllowDoubleCapture:",
+          "directOutputGroupFanout",
+          "setDirectOutputGroupFanout:",
+          "isActiveSession",
+          "setIsActiveSession:",
+          "init",
+          "beginExpectedARKRestart",
+          "endExpectedARKRestart",
+          "virtualDeviceExclusions",
+          "setVirtualDeviceExclusions:",
+          "enforceOnDemandTaps",
+          "setEnforceOnDemandTaps:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio15SSAudioPolicies",
+        "methods": [
+          "init",
+          "audiodWillUninstall",
+          "audiodDidUninstall",
+          "audiodWillUpdate",
+          "audiodDidUpdate"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio21SSMenuExtraFrameCache",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio19SSAudioSystemBanner",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudioP33_2B8F26A4DF046D6E9ED2E84118F8C09E27SystemVolumeBannerPresenter",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudioP33_2B8F26A4DF046D6E9ED2E84118F8C09E24OwnVolumeBannerPresenter",
+        "methods": []
+      },
+      {
+        "name": "_TtCO7SSAudio10SSBannerUI21SystemBannerPresenter",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio12SSAudioMeter",
+        "methods": [
+          "description",
+          "dealloc",
+          "active",
+          "clipStereoMax",
+          "peakStereoMax",
+          "rmsStereoMax",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio16SSAudioMixBuffer",
+        "methods": [
+          "dealloc",
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio15SSAudioTapGraph",
+        "methods": [
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio14SSAudioProcess",
+        "methods": [
+          "dealloc",
+          "description",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio17SSAudioTapContext",
+        "methods": [
+          "dealloc",
+          "willStartIO",
+          "didStopIO",
+          "didInvalidate",
+          "processIO:buffer:",
+          "initWithTap:config:queue:ioblock:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio21SSAudioDummyTapRunner",
+        "methods": [
+          "sessionRunner:performIOCycleWithSampleTime:",
+          "sessionRunner:didStartWithFrameCount:sampleRate:",
+          "sessionRunnerDidStop:"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio19SSAudioFeatureTimer",
+        "methods": [
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio21SSAudioVolumeSmoother",
+        "methods": []
+      },
+      {
+        "name": "_TtC7SSAudio25SSAudioTapActivityTracker",
+        "methods": [
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio10SSAudioTap",
+        "methods": [
+          "description",
+          "isTahoeCompatibilityModeActive",
+          "setIsTahoeCompatibilityModeActive:",
+          "dealloc",
+          "tap:createIOContext:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio5SSTap",
+        "methods": [
+          "initWithConfig:queue:",
+          "dealloc",
+          "start",
+          "stop",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio10SSMixQueue",
+        "methods": [
+          "dealloc",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio23SSAudioTapProcessorPool",
+        "methods": []
+      },
+      {
+        "name": "_TtCE7SSAudioCSo9ACPDevice17DeviceChangeMuter",
+        "methods": []
+      },
+      {
+        "name": "_TtCE7SSAudioCSo16ACPDeviceManagerP33_A28CEDFB295C53450C8CF7F8DF47F77618DevicePickObserver",
+        "methods": [
+          "received:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCFE7SSAudioCSo9ACPDevice9publisherFT7addressCSo18ACPPropertyAddress_GV7Combine12AnyPublisherT_Os5Never_L_16PropertyObserver",
+        "methods": []
+      },
+      {
+        "name": "_TtCFCE7SSAudioCSo9ACPDevice17DeviceChangeMuter6extendFT3forSd5ownerS0__T_L_8Delegate",
+        "methods": [
+          "tap:createIOContext:",
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC7SSAudio13SSAudioPolicy",
+        "methods": []
+      }
+    ],
+    "coverage": [
+      {
+        "facet": "objc_class_method_ivar_metadata",
+        "status": "partial",
+        "examined": 43,
+        "decoded": 86
+      },
+      {
+        "facet": "binary_relative_pointers",
+        "status": "complete",
+        "examined": 1569,
+        "decoded": 1569
+      },
+      {
+        "facet": "objc_properties_categories",
+        "status": "complete",
+        "examined": 5,
+        "decoded": 5
+      },
+      {
+        "facet": "pointer_fixups",
+        "status": "complete",
+        "examined": 2,
+        "decoded": 2
+      },
+      {
+        "facet": "swift_generic_resilient_witnesses_overrides_async_coroutines",
+        "status": "unsupported",
+        "examined": 0,
+        "decoded": 0
+      },
+      {
+        "facet": "swift_conformances_static_witness_slots",
+        "status": "partial",
+        "examined": 81,
+        "decoded": 4
+      },
+      {
+        "facet": "swift_class_vtable_descriptors",
+        "status": "partial",
+        "examined": 79,
+        "decoded": 641
+      }
+    ]
+  },
+  {
+    "evidence_id": "ev_be89038f78df14a9ac0bebb976d6dad000dd9ced9b0d45da17b3aeea09e73a17",
+    "subject": {
+      "architecture": "arm64",
+      "digest": {
+        "sha256": "b05be14debd1355f88868715279b25c8ee2cb2931ef11537aa85c93517997eb3"
+      },
+      "format": "mach-o",
+      "local_path": "/private/var/folders/gn/4ghmn0r95tq_49k_ysbrql0h0000gn/T/rea-extracted-329646ec-d013-4aff-b018-5df50b333202/SoundSource.app/Contents/MacOS/SoundSource",
+      "name": "SoundSource"
+    },
+    "class_records": 688,
+    "non_metaclass_records": 344,
+    "classes": [
+      {
+        "name": "SSApplication",
+        "methods": [
+          "init",
+          "reportException:",
+          "sendEvent:",
+          "_postDidFinishNotification",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXBuilderAction",
+        "methods": [
+          "initWithBlock:",
+          "initWithViewBlock:",
+          "performWithView:",
+          "block",
+          "setBlock:",
+          "viewBlock",
+          "setViewBlock:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXBuilderButtonView",
+        "methods": [
+          "raSetInfo:",
+          "containsAXControls",
+          "isAccessibilityElement",
+          "accessibilityRole",
+          "contentAXValue:",
+          "accessibilityRoleDescription",
+          "accessibilityTitle",
+          "accessibilityLabel",
+          "accessibilityValue",
+          "accessibilityHelp",
+          "accessibilityActionNames",
+          "accessibilityPerformAction:",
+          "accessibilityPerformPress",
+          "setAccessibilityFocused:",
+          "raUpdateCustom",
+          "canBecomeKeyView",
+          "acceptsFirstResponder",
+          "setEnabled:",
+          "resignFirstResponder",
+          "mouseDown:",
+          "pressOpacityApplied",
+          "setPressOpacityApplied:",
+          "pressIdleOpacity",
+          "setPressIdleOpacity:",
+          "keepsFocusWhileDisabling",
+          "setKeepsFocusWhileDisabling:"
+        ]
+      },
+      {
+        "name": "GXBuilderActionButtonView",
+        "methods": [
+          "hitTest:",
+          "raSetInfo:",
+          "mouseDownCanMoveWindow",
+          "accessibilityRole",
+          "accessibilityLabel",
+          "keyDown:",
+          "mouseDown:",
+          "performClick:",
+          "builderAction",
+          "setBuilderAction:",
+          "builderDoubleClickAction",
+          "setBuilderDoubleClickAction:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXBuilderRenderer",
+        "methods": []
+      },
+      {
+        "name": "SSGXInfoReaper",
+        "methods": [
+          "dealloc",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXMarkupPopoverWindow",
+        "methods": [
+          "targetScreenRect",
+          "ssPointerMargin",
+          "ssPlacementOverlap",
+          "ssAttachesTopMiddleOnly",
+          "ssAttachedBodyMaxY",
+          "_attachedPlacementForFrame:orientation:targetRect:",
+          "markupMargins:",
+          "marginsWithPointerRoom:",
+          "raSetInfo:",
+          "ssMargins",
+          "ssSetMargins:frame:",
+          "ssFollowFrameWithShape",
+          "_parkedMargins",
+          "_expandMarginsForMotion",
+          "fitHugContentIfNeeded",
+          "seedFrameAtPreferredOrientation",
+          "_targetScreen",
+          "setShown:",
+          "setState:",
+          "ssOptionKeyHeld:",
+          "ssRejoinOptionParent",
+          "ssBeginTouchDrag",
+          "ssTrackOwnDrag",
+          "ssEditorIsResizing",
+          "windowWillDrag:",
+          "windowDragged:isEnding:",
+          "ssPinDistance",
+          "ssDragPins",
+          "_stateForTornDistance:",
+          "_attachEdgeTargetRect:",
+          "_tornDistanceWithFrame:targetRect:",
+          "_updateShapeWithFrame:targetRect:",
+          "onHidden",
+          "setOnHidden:",
+          "onStateChanged",
+          "setOnStateChanged:",
+          "onWillHide",
+          "setOnWillHide:",
+          "allowHide",
+          "setAllowHide:",
+          "pinOnTearOff",
+          "setPinOnTearOff:",
+          "ssHoldsMargins",
+          "setSsHoldsMargins:",
+          "keepsAttachedOrientation",
+          "setKeepsAttachedOrientation:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSPreset",
+        "methods": [
+          "init",
+          "uuid",
+          "setUuid:",
+          "id",
+          "groupUUID",
+          "setGroupUUID:",
+          "fileURL",
+          "setFileURL:",
+          "presetManagerFace",
+          "faceModel",
+          "name",
+          "setName:",
+          "iconName",
+          "setIconName:",
+          "settings",
+          "setSettings:",
+          "loadPlist",
+          "setLoadPlist:",
+          "editingName",
+          "setEditingName:",
+          "locked",
+          "setLocked:",
+          "initWithName:settings:",
+          "description",
+          "isEqualToSettings:printingChanges:",
+          "launchPlist",
+          "setLaunchPlist:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSFactoryPreset",
+        "methods": [
+          "isEqualToSettings:printingChanges:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSAUPreset",
+        "methods": [
+          "init",
+          "isEqualToSettings:printingChanges:"
+        ]
+      },
+      {
+        "name": "SS10BandEQPreset",
+        "methods": [
+          "sparklinePointArray",
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource14SSLegacyPreset",
+        "methods": [
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource10UndoBridge",
+        "methods": [
+          "resetBaseline",
+          "refreshBaselineWithKey:",
+          "runUndo",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_C023F54A429D56CB42E46633217D805119UndoGXModelObserver",
+        "methods": [
+          "initOnChange:onCommit:",
+          "cancel",
+          "modelDidChange:",
+          "modelDidCommit:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSHotKeyManager",
+        "methods": [
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSHotkey",
+        "methods": [
+          "showKeyboardSymbol",
+          "showKeyEquivalent",
+          "deregister",
+          "init",
+          "dealloc",
+          "uuid",
+          "setUuid:",
+          "active",
+          "setActive:",
+          "data",
+          "setData:",
+          "clear",
+          "combo",
+          "lastFireDate",
+          "setLastFireDate:",
+          "suspendCarbonRegistration",
+          "resumeCarbonRegistration",
+          "action",
+          "setAction:",
+          "registrationPreventionReason",
+          "setRegistrationPreventionReason:",
+          "loadPlist",
+          "setLoadPlist:",
+          "keyEquivalent",
+          "setKeyEquivalent:",
+          "hasShortcut",
+          "showsIdlePrompt",
+          "typedString",
+          "setTypedString:",
+          "typedStringIsCombo",
+          "isRegistered",
+          "isRecording",
+          "setIsRecording:",
+          "styles",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource10DeviceList",
+        "methods": [
+          "displayDevicesWithShowAirPlay:showHidden:filtering:including:hiding:",
+          "devicesForMenu",
+          "currentSystemDevice",
+          "devices",
+          "setDevices:",
+          "unsupported",
+          "inputList",
+          "initWithInputs:unsupported:filter:",
+          "dealloc",
+          "updateDevices",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource13GXMenuContent",
+        "methods": [
+          "unhandledKeyEquivalent",
+          "makeMenu",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXPopupMenuView",
+        "methods": [
+          "raSetInfo:",
+          "raSetViewValue:",
+          "canBecomeKeyView",
+          "menuNeedsUpdate:",
+          "keyDown:",
+          "mouseDown:",
+          "performClick:",
+          "initWithFrame:pullsDown:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXPopupMenuHostView",
+        "methods": [
+          "dealloc",
+          "raSetInfo:",
+          "accessibilityRole",
+          "viewDidMoveToWindow",
+          "keyDown:",
+          "mouseDown:",
+          "performClick:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource23SSGXModelChangeObserver",
+        "methods": [
+          "dealloc",
+          "modelDidChange:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource24SSGXSaveQuickConfigModel",
+        "methods": [
+          "name",
+          "setName:",
+          "cantCommit",
+          "beginOnCommit:onDismiss:",
+          "commit",
+          "dismiss",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXHiddenSourceTabsLayoutView",
+        "methods": [
+          "raSetInfo:",
+          "layoutChildren:inRect:animated:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource23SSGXHiddenSourceTracker",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource19SSGXPopoverRootFace",
+        "methods": [
+          "isSelected",
+          "allowsAutoKeyPaths",
+          "valueForUndefinedKey:",
+          "setValue:forUndefinedKey:",
+          "respondsToSelector:",
+          "forwardingTargetForSelector:",
+          "initWithModel:",
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17SSGXEffectRowFace",
+        "methods": [
+          "effect",
+          "popoverPresented",
+          "setPopoverPresented:",
+          "popoverPinned",
+          "setPopoverPinned:",
+          "rowEditorToggle",
+          "setRowEditorToggle:",
+          "editingName",
+          "setEditingName:",
+          "presetManagerPresentationPending",
+          "setPresetManagerPresentationPending:",
+          "presetManagerInPopover",
+          "setPresetManagerInPopover:",
+          "presetManagerPresentedInRow",
+          "setPresetManagerPresentedInRow:",
+          "presetManagerPresentedInPopover",
+          "setPresetManagerPresentedInPopover:",
+          "presetManagerPresented",
+          "setPresetManagerPresented:",
+          "initWithModel:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource25GXMarkupPopoverController",
+        "methods": [
+          "popover",
+          "setPopover:",
+          "contentResizes",
+          "setContentResizes:",
+          "accessibilityTitle",
+          "setAccessibilityTitle:",
+          "usesAppKitTabOrder",
+          "setUsesAppKitTabOrder:",
+          "dealloc",
+          "isShown",
+          "presentedDidChange",
+          "pinnedDidChange",
+          "savedBodyPosition",
+          "restoreBodyPosition:",
+          "lookAtIfPinned",
+          "invalidate",
+          "anchorDidAppear:",
+          "anchorDidDisappear:",
+          "anchorReport",
+          "withoutHideAnimation:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource25GXMarkupPopoverAnchorView",
+        "methods": [
+          "raSetInfo:",
+          "raUpdateCustom",
+          "viewDidMoveToWindow",
+          "viewDidHide",
+          "viewDidUnhide",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource20SSGXMainPopoverState",
+        "methods": [
+          "isShown",
+          "setIsShown:",
+          "isPinned",
+          "setIsPinned:",
+          "reopensPinned",
+          "setReopensPinned:",
+          "init",
+          "restorePlacementOf:",
+          "saveFrom:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource25SSGXMainPopoverController",
+        "methods": [
+          "model",
+          "popover",
+          "initWithModel:",
+          "dealloc",
+          "install",
+          "restorePinnedPresentation",
+          "isShown",
+          "modelDidChange:",
+          "mainModel:setPinned:",
+          "mainModelWillRefreshRowsForWindowWidth:",
+          "mainModelDidRefreshRowsForWindowWidth:",
+          "sourceLists",
+          "popoverContentSizeDidSettle",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource19SSGXWidthTransition",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource17SSGXSourceRowFace",
+        "methods": [
+          "source",
+          "optionsPresented",
+          "setOptionsPresented:",
+          "optionsAdvancedExpanded",
+          "setOptionsAdvancedExpanded:",
+          "initWithModel:",
+          "effectDropActive",
+          "setEffectDropActive:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource19ModifierFlagMonitor",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource28IOBluetoothConnectionManager",
+        "methods": [
+          "status",
+          "setStatus:",
+          "remoteNameRequestComplete:status:",
+          "sdpQueryComplete:status:",
+          "connectionComplete:status:",
+          "init"
+        ]
+      },
+      {
+        "name": "_TtCV11SoundSource21SSOutputGroupMenuView19SubdeviceModelCache",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource30SSGXOutputGroupMenuHeaderModel",
+        "methods": [
+          "name",
+          "setName:",
+          "iconImage",
+          "setIconImage:",
+          "connecting",
+          "setConnecting:",
+          "selected",
+          "setSelected:",
+          "expanded",
+          "setExpanded:",
+          "hasSubdevices",
+          "setHasSubdevices:",
+          "connectionStatus",
+          "setConnectionStatus:",
+          "expansionValue",
+          "accessibilityValue",
+          "configureWithGroup:selection:menu:",
+          "setMenuOpen:",
+          "toggleExpanded",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCVV11SoundSource10EffectMenu14EffectMenuItem16EffectNSMenuItem",
+        "methods": [
+          "dealloc",
+          "initWithCoder:",
+          "redrawWithFlagsChanging:",
+          "updateEmphasis",
+          "isHighlighted",
+          "accessibilityPerformPress",
+          "accessibilityCustomActions",
+          "accessibilityLabel",
+          "initWithTitle:action:keyEquivalent:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource25SSGXEffectMenuSearchModel",
+        "methods": [
+          "filterText",
+          "setFilterText:",
+          "menu",
+          "setMenu:",
+          "dealloc",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXEffectMenuSearchField",
+        "methods": [
+          "viewDidMoveToWindow",
+          "raIsLeaf",
+          "raSetViewValue:",
+          "becomeFirstResponder",
+          "textDidEndEditing:",
+          "setFrameSize:",
+          "keyDown:",
+          "control:textView:doCommandBySelector:",
+          "dealloc",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource20StatusItemController",
+        "methods": [
+          "init",
+          "dealloc",
+          "setupStatusItems",
+          "updateActiveApps",
+          "updateQuickConfigStatusItem",
+          "modelDidChange:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17SSAnimationStatus",
+        "methods": []
+      },
+      {
+        "name": "SSEffectModel",
+        "methods": [
+          "processingTooltip",
+          "presentPresetManagerWithTitle:inPopover:",
+          "makeContextMenuItems",
+          "openEditor",
+          "closeEditor",
+          "focusSource",
+          "resetToDefaults",
+          "gxTypeSelectLabel",
+          "init",
+          "initWithDescriptor:",
+          "dealloc",
+          "setupObservers",
+          "stopObservers",
+          "maxAllowance",
+          "setMaxAllowance:",
+          "uuid",
+          "setUuid:",
+          "currentPreset",
+          "name",
+          "setName:",
+          "axValueDescription",
+          "enabled",
+          "setEnabled:",
+          "effectsBypassed",
+          "effectivelyEnabled",
+          "nodeError",
+          "setNodeError:",
+          "nodeErrorDismissed",
+          "nodeErrorVisible",
+          "nodeLoadingView",
+          "nameStyles",
+          "nodeErrorMessage",
+          "nodeErroredWithError:",
+          "descriptor",
+          "nodeDefaults",
+          "setNodeDefaults:",
+          "presetGroupUID",
+          "node",
+          "setNode:",
+          "modelDidChange:",
+          "modelDidCommit:",
+          "latency",
+          "setLatency:",
+          "settingsDidChange:",
+          "presetSettings",
+          "setPresetSettings:",
+          "presetGroup",
+          "setPresetGroup:",
+          "sourceModel",
+          "willRemoveFromSuperModel",
+          "didAddToSuperModel",
+          "rowFace",
+          "setRowFace:",
+          "popoverController",
+          "loadedPopoverController",
+          "setLoadedPopoverController:",
+          "presetManagerModel",
+          "setPresetManagerModel:",
+          "presetSummary",
+          "presetIconImage",
+          "presetIconVisible",
+          "contextMenuItems",
+          "profileBrowserVisible",
+          "favorite",
+          "setFavorite:",
+          "favoriteVisible",
+          "focusVisible",
+          "popoverAttached",
+          "styles",
+          "focusButtonVisible",
+          "gxListItemHeight",
+          "gxCopyForDrop",
+          "loadPlist",
+          "setLoadPlist:",
+          "undoStepNameWithOld:new:",
+          "adoptNodeIdentity",
+          "closeNonPinnedPopoverWithAnimated:",
+          "hasPopover",
+          "hasGXMarkupEditor",
+          "showPopover",
+          "hidePopover",
+          "popoverIsShown",
+          "popoverWindowIsShown",
+          "didAddToParent",
+          "removeFromParent",
+          "removeFromParentWithBatch:announce:",
+          "keepAlive",
+          "processing",
+          "waitForParametersWithCompletionHandler:",
+          "matchesDescriptor:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource9ValueRamp",
+        "methods": []
+      },
+      {
+        "name": "SSAudioUnitEffectModel",
+        "methods": [
+          "init",
+          "loadFactoryPresetsIfNeeded",
+          "presetGroup",
+          "setPresetGroup:",
+          "toggleAudioUnitInterface:",
+          "axValueDescription",
+          "favoriteVisible",
+          "makeContextMenuItems",
+          "nodeErrorDismissed",
+          "waitForParametersWithCompletionHandler:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21SourceOptionsRegistry",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource25DeviceSelectionController",
+        "methods": [
+          "uuid",
+          "setUuid:",
+          "init",
+          "initWithDeviceList:deviceHistory:defaultDevice:",
+          "dealloc",
+          "deviceList",
+          "setDeviceList:",
+          "displayDevice",
+          "setDisplayDevice:",
+          "selectedDevices",
+          "setSelectedDevices:",
+          "selectedDevicesChangedWithDevices:userDriven:completionHandler:",
+          "matchDeviceHistoryWithForce:completionHandler:",
+          "userSetSelectedDevices:completionHandler:",
+          "defaultDevice",
+          "selectedDevice",
+          "setSelectedDevice:",
+          "loadPlist",
+          "setLoadPlist:",
+          "updateConnecting",
+          "connecting",
+          "setConnecting:",
+          "deviceSelectionHistory",
+          "setDeviceSelectionHistory:",
+          "deviceHistoryChangedWithOldValue:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21SSNotificationManager",
+        "methods": []
+      },
+      {
+        "name": "SSEqualizerEffectModel",
+        "methods": [
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource27GXReorderInsertionIndicator",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "isOpaque",
+          "drawRect:"
+        ]
+      },
+      {
+        "name": "_TtCO11SoundSource20MarkupAnimationTempoP33_8063695FBA3DF479512A66D2BCC5FE9B13StampedSpring",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource21GXMarkupTransitionBox",
+        "methods": [
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource27GXMarkupTransitionInsertion",
+        "methods": [
+          "superviewOffset",
+          "progress",
+          "baseOpacity",
+          "setBaseOpacity:",
+          "opacityFactor",
+          "modelOpacityFactor",
+          "currentSuperviewOffset",
+          "finish",
+          "animateFrame:shouldStop:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXMarkupTransitionGhost",
+        "methods": [
+          "initWithCoder:",
+          "animateFrame:shouldStop:",
+          "drawRect:",
+          "isOpaque",
+          "hitTest:",
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "isAccessibilityElement",
+          "accessibilityChildren",
+          "raIsSelfPlaced",
+          "initWithFrame:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXListReorderDragger",
+        "methods": [
+          "hookEvent:",
+          "dragStarted:withView:",
+          "dragCommenced",
+          "dragMoved:",
+          "dragEnded:",
+          "dragCancelled",
+          "reorderDragAndScroll",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXListReorderRowView",
+        "methods": [
+          "viewDidMoveToWindow",
+          "hitTest:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_8905A2B9218059E17E57331F5B9ED86A26GXReorderRowHoldRecognizer",
+        "methods": [
+          "init",
+          "initWithCoder:",
+          "gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:",
+          "mouseDown:",
+          "rightMouseDown:",
+          "touchesBeganWithEvent:",
+          "touchesMovedWithEvent:",
+          "touchesEndedWithEvent:",
+          "touchesCancelledWithEvent:",
+          "reset",
+          "initWithTarget:action:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXListDragger",
+        "methods": [
+          "dragStarted:withView:",
+          "dragEnded:",
+          "dragCancelled",
+          "handleDoubleClick:withView:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXEmbeddedListView",
+        "methods": [
+          "raIsLeaf",
+          "raDesiredSize",
+          "becomeFirstResponder",
+          "raSetInfo:",
+          "raSetFrame:",
+          "raUpdateCustom",
+          "viewDidHide",
+          "viewDidUnhide",
+          "layout",
+          "viewDidMoveToWindow",
+          "contentHeightForWidth:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXListView",
+        "methods": [
+          "listItemViewInfo",
+          "setListItemViewInfo:",
+          "defaultItemHeight",
+          "setDefaultItemHeight:",
+          "topHeight",
+          "setTopHeight:",
+          "bottomHeight",
+          "setBottomHeight:",
+          "interItemHeight",
+          "setInterItemHeight:",
+          "recyclesRowViews",
+          "setRecyclesRowViews:",
+          "animatesItemChanges",
+          "setAnimatesItemChanges:",
+          "rowBuildBudget",
+          "setRowBuildBudget:",
+          "contentHeight",
+          "viewDidMoveToWindow",
+          "dealloc",
+          "items",
+          "setItems:",
+          "raSetInfo:",
+          "raDidAttachToModel",
+          "raViewValue",
+          "raSetViewValue:",
+          "raUpdateCustom",
+          "reloadAll",
+          "raVisibleRectChanged:",
+          "deferredRowPassFired:",
+          "raIsFlexDriver",
+          "layout",
+          "setFrameSize:",
+          "revealGlideFired:",
+          "shouldPreserveRowView:forItem:",
+          "moveUp:",
+          "moveDown:",
+          "moveLeft:",
+          "moveRight:",
+          "keyDown:",
+          "delete:",
+          "selectAll:",
+          "raEnclosingCollectionView",
+          "modelsForSelectionRect:",
+          "selectedItems",
+          "selectAsOnly:",
+          "extendSelectionTo:",
+          "deselectAll",
+          "touchExtendSelectionRecognized:",
+          "touchExtendScrollFired:",
+          "mouseDownInScrollView:",
+          "viewDidMoveToSuperview",
+          "canBecomeKeyView",
+          "acceptsFirstResponder",
+          "accessibilityRole",
+          "accessibilityFrame",
+          "accessibilityFocusedUIElement",
+          "accessibilitySelectedChildren",
+          "setAccessibilitySelectedChildren:",
+          "accessibilitySelectedRows",
+          "setAccessibilitySelectedRows:",
+          "accessibilityRows",
+          "accessibilityChildren",
+          "accessibilityVisibleRows",
+          "accessibilityVisibleChildren",
+          "moveFirstResponderToAnchor",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCC11SoundSource12SSGXListViewP33_AD815D520B01155573359A9D8635DB1818RowBuildFrameReset",
+        "methods": [
+          "tick:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_AD815D520B01155573359A9D8635DB1828TouchExtendSelectionDelegate",
+        "methods": [
+          "gestureRecognizerShouldBegin:",
+          "gestureRecognizer:shouldRequireFailureOfGestureRecognizer:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource31SSGXListRowAccessibilityElement",
+        "methods": [
+          "accessibilityParent",
+          "isAccessibilityElement",
+          "isAccessibilityEnabled",
+          "accessibilityRole",
+          "accessibilityLabel",
+          "accessibilityValue",
+          "accessibilityFrame",
+          "accessibilityIndex",
+          "isAccessibilitySelected",
+          "setAccessibilitySelected:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSymbolBrowserListView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "keyDown:",
+          "accessibilityRole",
+          "accessibilityRoleDescription",
+          "accessibilityLabel",
+          "accessibilityRowCount",
+          "accessibilityColumnCount",
+          "isAccessibilityOrderedByRow",
+          "accessibilityChildren",
+          "accessibilityRows",
+          "accessibilityVisibleRows",
+          "accessibilityColumns",
+          "accessibilityVisibleColumns",
+          "accessibilityVisibleChildren",
+          "accessibilityVisibleCells",
+          "accessibilitySelectedRows",
+          "setAccessibilitySelectedRows:",
+          "accessibilitySelectedChildren",
+          "setAccessibilitySelectedChildren:",
+          "accessibilitySelectedCells",
+          "setAccessibilitySelectedCells:",
+          "accessibilityCellForColumn:row:",
+          "accessibilityFocusedUIElement",
+          "accessibilityHitTest:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSymbolBrowserIconHostView",
+        "methods": [
+          "isAccessibilityElement",
+          "accessibilityHitTest:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXSymbolBrowserRowView",
+        "methods": [
+          "isAccessibilityElement",
+          "accessibilityChildren",
+          "accessibilityHitTest:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource33SSGXSymbolBrowserAccessibilityRow",
+        "methods": [
+          "accessibilityParent",
+          "isAccessibilityElement",
+          "isAccessibilityEnabled",
+          "accessibilityRole",
+          "accessibilityChildren",
+          "accessibilityVisibleChildren",
+          "accessibilityFrame",
+          "accessibilityIndex",
+          "isAccessibilitySelected",
+          "setAccessibilitySelected:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource36SSGXSymbolBrowserAccessibilityColumn",
+        "methods": [
+          "accessibilityParent",
+          "isAccessibilityElement",
+          "isAccessibilityEnabled",
+          "accessibilityRole",
+          "accessibilityIndex",
+          "accessibilityFrame",
+          "accessibilityChildren",
+          "accessibilityVisibleChildren",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource34SSGXSymbolBrowserAccessibilityCell",
+        "methods": [
+          "accessibilityParent",
+          "isAccessibilityElement",
+          "isAccessibilityEnabled",
+          "accessibilityRole",
+          "accessibilityLabel",
+          "accessibilityHelp",
+          "accessibilityFrame",
+          "accessibilityIndex",
+          "accessibilityRowIndexRange",
+          "accessibilityColumnIndexRange",
+          "isAccessibilitySelected",
+          "setAccessibilitySelected:",
+          "accessibilityPerformPress",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource16RowRevealClipper",
+        "methods": [
+          "initWithList:",
+          "exitingViews",
+          "trackedViews",
+          "isRunning",
+          "exitingViewWithWhere:",
+          "enter:",
+          "forget:",
+          "exit:",
+          "animateFrame:shouldStop:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCC11SoundSource16RowRevealClipper14UncoveredBlock",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource28GXMarkupPresentationHostView",
+        "methods": [
+          "raSetInfo:",
+          "viewDidMoveToWindow",
+          "raSetViewValue:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource23GXMarkupPopoverHostView",
+        "methods": [
+          "dealloc",
+          "raSetInfo:",
+          "raSetViewValue:",
+          "raUpdateCustom",
+          "lookAtPinnedPopoverRequested:",
+          "viewDidHide",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource30GXMarkupTouchExpansionHostView",
+        "methods": [
+          "layout",
+          "raSetInfo:",
+          "gestureRecognizer:shouldReceiveTouch:",
+          "gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:",
+          "tapRecognized:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21GXMarkupSheetHostView",
+        "methods": [
+          "layout",
+          "viewDidMoveToWindow",
+          "dealloc",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource23SSWindowOrderOutWatcher",
+        "methods": [
+          "animateFrame:shouldStop:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22SSGXPopoverPayloadView",
+        "methods": [
+          "raSetInfo:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXMarkupPopoverWindow",
+        "methods": [
+          "canBecomeKeyWindow",
+          "stepBodyGlide",
+          "mouseDown:",
+          "mouseDragged:",
+          "gxFrame",
+          "windowWillDrag:",
+          "windowDragged:isEnding:",
+          "makeFirstResponder:",
+          "cancelOperation:",
+          "accessibilityTitle",
+          "accessibilitySubrole",
+          "standardWindowButton:",
+          "raSetChildren:",
+          "isShown",
+          "setShown:",
+          "setAlphaValue:animated:",
+          "orderOut:",
+          "close",
+          "state",
+          "setState:",
+          "setFrameTarget:animated:",
+          "applyFrame:display:",
+          "contentLayoutUsesTarget",
+          "setFrame:display:",
+          "frameForContentSize:",
+          "ssEditorIsResizing",
+          "_getExteriorResizeEdgeThicknesses:forTouch:",
+          "_getResizeEdgeAndCornerThicknesses:forTouch:",
+          "_getExteriorResizeEdgeThicknesses:",
+          "_getResizeEdgeAndCornerThicknesses:",
+          "windowWillStartLiveResize:",
+          "windowWillResize:toSize:",
+          "windowDidResize:",
+          "windowDidEndLiveResize:",
+          "raSetFrame:",
+          "raFrame",
+          "update",
+          "contentSizeDidSettle",
+          "_invalidateContentLayout",
+          "viewAnimationsDisabled",
+          "setViewAnimationsDisabled:",
+          "raSetInfo:",
+          "observeThemeChanges",
+          "windowDidBecomeKey:",
+          "windowDidResignKey:",
+          "dealloc",
+          "performClose:",
+          "sendEvent:",
+          "constrainFrameRect:toScreen:",
+          "hideAttachedPopovers",
+          "performKeyEquivalent:",
+          "initWithContentRect:styleMask:backing:defer:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21SSGXMainPopoverWindow",
+        "methods": [
+          "ssAttachesTopMiddleOnly",
+          "ssAttachedBodyMaxY",
+          "contentSizeDidSettle",
+          "contentLayoutUsesTarget",
+          "setFrame:display:",
+          "applyFrame:display:",
+          "sendEvent:",
+          "windowWillStartLiveResize:",
+          "windowWillResize:toSize:",
+          "windowDidResize:",
+          "windowDidEndLiveResize:",
+          "frameForContentSizeWithSize:",
+          "initWithContentRect:styleMask:backing:defer:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_9A1F614B1A01E4778D9AD3EBB26A47C223SSGXInactiveOverlayView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "wantsUpdateLayer",
+          "updateLayer",
+          "hitTest:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17SSWindowWarpGenie",
+        "methods": [
+          "isRunning",
+          "initWithWindow:target:duration:",
+          "startWithCompletion:",
+          "restore",
+          "tick",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22GXListDropRegistration",
+        "methods": []
+      },
+      {
+        "name": "GXListScrollView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "hasHorizontalScroller",
+          "setHasHorizontalScroller:",
+          "horizontalScrollElasticity",
+          "setHorizontalScrollElasticity:",
+          "wantsUpdateLayer",
+          "updateLayer",
+          "raSetInfo:",
+          "viewDidMoveToWindow",
+          "dealloc",
+          "scrollWheel:",
+          "superScrollWheel:",
+          "raDesiredSize",
+          "contentHeightForWidth:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_DE0DC226C36D0AFFC0AEF5128144EA5518GXVerticalClipView",
+        "methods": [
+          "constrainBoundsRect:",
+          "setBoundsOrigin:",
+          "scrollToPoint:",
+          "bounds",
+          "setBounds:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource23GXMarkupAnimationDriver",
+        "methods": [
+          "hasSeenValue",
+          "setHasSeenValue:",
+          "valueDidUpdate:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22GXMarkupRotationDriver",
+        "methods": [
+          "valueDriven",
+          "setValueDriven:",
+          "hasSeenValue",
+          "setHasSeenValue:",
+          "currentDegrees",
+          "setCurrentDegrees:",
+          "drawDegrees",
+          "valueDidUpdate:",
+          "animateFrame:shouldStop:",
+          "dealloc",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22GXMarkupOnAppearDriver",
+        "methods": [
+          "hierarchyChanged",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource25GXMarkupOnDisappearDriver",
+        "methods": [
+          "hierarchyChanged",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22GXMarkupHoverKeyDriver",
+        "methods": [
+          "dealloc",
+          "hierarchyChanged",
+          "installTracking",
+          "mouseEntered:",
+          "mouseExited:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21GXNotificationFocusID",
+        "methods": [
+          "resolve",
+          "init:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource31GXMarkupNotificationFocusDriver",
+        "methods": [
+          "dealloc",
+          "modelDidChange:",
+          "hierarchyChanged",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource23GXMarkupHideOnKeyDriver",
+        "methods": [
+          "hasSeenValue",
+          "setHasSeenValue:",
+          "refreshWithViewValue:valueChanged:",
+          "valueDidUpdate:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource19GXMarkupScaleDriver",
+        "methods": [
+          "valueDriven",
+          "setValueDriven:",
+          "hasSeenValue",
+          "setHasSeenValue:",
+          "currentScale",
+          "setCurrentScale:",
+          "pivotProvider",
+          "setPivotProvider:",
+          "removalDurationForBackup",
+          "valueDidUpdate:",
+          "animateToOffWithCompletion:",
+          "animateFrame:shouldStop:",
+          "refreshTransform",
+          "dealloc",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21GXMarkupFocusRingView",
+        "methods": [
+          "raIsSelfPlaced",
+          "hitTest:",
+          "raSetInfo:",
+          "viewDidMoveToWindow",
+          "viewDidChangeEffectiveAppearance",
+          "layout",
+          "drawFocusRingMask",
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "dealloc",
+          "modelDidChange:",
+          "geometryChanged:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_1FC18B7BC0E05B0EC90E9A5C8586178518FocusRingWindowHub",
+        "methods": [
+          "rings",
+          "dealloc",
+          "visibilityChangedIn:",
+          "splashUntabbedFocusWithOnto:",
+          "focusConditionsChanged:",
+          "themeChanged:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_1FC18B7BC0E05B0EC90E9A5C8586178519FocusRingBlurDriver",
+        "methods": [
+          "animateFrame:shouldStop:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_1FC18B7BC0E05B0EC90E9A5C8586178517FocusGlowClipView",
+        "methods": [
+          "isFlipped",
+          "raIsSelfPlaced",
+          "hitTest:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_1FC18B7BC0E05B0EC90E9A5C8586178520FocusGlowOverlayView",
+        "methods": [
+          "raIsSelfPlaced",
+          "initWithFrame:",
+          "initWithCoder:",
+          "hitTest:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17GXFocusRingSplash",
+        "methods": [
+          "forNotification",
+          "cancel",
+          "animateFrame:shouldStop:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_30D583575A1E88A86E1D2E22587B3C1D17SplashOverlayView",
+        "methods": [
+          "isFlipped",
+          "raIsSelfPlaced",
+          "hitTest:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource15SSContentsSweep",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource20SSGXWindowController",
+        "methods": [
+          "dealloc",
+          "loadWindowFromInfo:",
+          "setupNewWindow",
+          "showWindow:",
+          "initWithWindow:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCV11SoundSource14GXWindowMarkup15DeferredContent",
+        "methods": [
+          "compile",
+          "initWithCompile:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17GXListDropSession",
+        "methods": []
+      },
+      {
+        "name": "_TtCO11SoundSource16GXListDropImportP33_F62140C2D3FE6CCE9CC65D653AA44ED618SynchronousPayload",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource20GXReorderDragOverlay",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSourceP33_6F0DA8263068A47951447B9CDB1515C718GXReorderGhostView",
+        "methods": [
+          "hitTest:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_6F0DA8263068A47951447B9CDB1515C719GXReorderDragWindow",
+        "methods": [
+          "canBecomeKeyWindow",
+          "canBecomeMainWindow",
+          "initWithContentRect:styleMask:backing:defer:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21GXMarkupClipMaskLayer",
+        "methods": [
+          "actionForKey:",
+          "display",
+          "drawInContext:",
+          "init",
+          "initWithLayer:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXLabelView",
+        "methods": [
+          "raUpdateContentSize",
+          "raUpdateCustom",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXFlexSpacerView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXContainerView",
+        "methods": [
+          "wantsUpdateLayer",
+          "raUpdateCustomStyles",
+          "updateLayer",
+          "raSetNeedsDisplay",
+          "raUpdateContentSize",
+          "makeBackingLayer",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXMarkupClipShapeView",
+        "methods": [
+          "raSetInfo:",
+          "raSetFrame:",
+          "layout",
+          "wantsUpdateLayer",
+          "updateLayer",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXFlippedView",
+        "methods": [
+          "isFlipped",
+          "isOpaque",
+          "allowsVibrancy",
+          "raIsLeaf",
+          "raSetInfo:",
+          "raSetFrame:",
+          "layout",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXWrappingLabelView",
+        "methods": [
+          "raDesiredSize",
+          "contentHeightForWidth:",
+          "raUpdateCustom",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSegmentButtonView",
+        "methods": [
+          "accessibilityRole",
+          "accessibilitySubrole",
+          "accessibilityRoleDescription",
+          "keyDown:",
+          "canBecomeKeyView",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXSwitchKnobPainter",
+        "methods": [
+          "raSetInfo:",
+          "copyWithZone:",
+          "drawInRect:withValue:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSwitchView",
+        "methods": [
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "accessibilityRole",
+          "accessibilityValue",
+          "accessibilityPerformPress",
+          "keyDown:",
+          "raSetViewValue:",
+          "setDragFraction:",
+          "settleDrag",
+          "viewDidMoveToWindow",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXHorizontalFlipSymbolPainter",
+        "methods": [
+          "drawInRect:withValue:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXVerticalFlipSymbolPainter",
+        "methods": [
+          "raSetInfo:",
+          "copyWithZone:",
+          "drawInRect:withValue:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXFilledWhenOnSymbolPainter",
+        "methods": [
+          "raSetInfo:",
+          "copyWithZone:",
+          "drawInRect:withValue:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXCaarLayer",
+        "methods": [
+          "init",
+          "initWithLayer:",
+          "initWithCoder:",
+          "display",
+          "raAnimate:",
+          "layoutSublayers",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_547AE5CEF7DEA103BC4AB633AB7F1CFB33GXFirstResponderSelectionObserver",
+        "methods": []
+      },
+      {
+        "name": "_TtCC11SoundSourceP33_547AE5CEF7DEA103BC4AB633AB7F1CFB33GXFirstResponderSelectionObserver6Tokens",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource26GXListAccessibilityRowView",
+        "methods": [
+          "accessibilityPerformShowMenu",
+          "raIsSelfPlaced",
+          "raSetFrame:",
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "raDidAttachToModel",
+          "dealloc",
+          "modelDidChange:",
+          "isAccessibilitySelected",
+          "gxSelectForControlClick",
+          "accessibilityChildren",
+          "accessibilityLabel",
+          "accessibilityValue",
+          "accessibilityRole",
+          "accessibilityRoleDescription",
+          "isAccessibilitySelectorAllowed:",
+          "accessibilityPerformPress",
+          "accessibilityCustomActions",
+          "accessibilityIndex",
+          "accessibilityHelp",
+          "menuForEvent:",
+          "raUpdateCustomStyles",
+          "frame",
+          "setFrame:",
+          "setFrameOrigin:",
+          "postAccessibilityMoved",
+          "viewDidMoveToWindow",
+          "isAccessibilityFocused",
+          "setAccessibilityFocused:",
+          "hitTest:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXEnvironmentRuntime",
+        "methods": [
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource25GXMarkupEnvironmentValues",
+        "methods": [
+          "init:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCV11SoundSourceP33_450DB70A6CC9817FDD944D0AEAD86D9A21GXMarkupRepresentable11Coordinator",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSourceP33_450DB70A6CC9817FDD944D0AEAD86D9A18GXMarkupCanvasHost",
+        "methods": [
+          "initWithCoder:",
+          "isFlipped",
+          "intrinsicContentSize",
+          "fittingSize",
+          "layout",
+          "initWithFrame:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource38SSGXContextMenuBuilderActionButtonView",
+        "methods": [
+          "menuForEvent:",
+          "mouseDown:",
+          "accessibilityRole",
+          "accessibilityRoleDescription",
+          "accessibilityValue",
+          "raUpdateCustom",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource12SSGXRowsFace",
+        "methods": [
+          "rows",
+          "setRows:",
+          "initWithModel:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource24SSGXSourceHotkeyRowModel",
+        "methods": [
+          "hotkey",
+          "initWithModel:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXSaveQuickConfigTextField",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "viewDidMoveToWindow"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource20SSGXSourceProjection",
+        "methods": [
+          "section",
+          "rows",
+          "leadingRows:",
+          "isEmpty",
+          "initWithSourceList:section:",
+          "gxSelectionOrderForListWithContext:",
+          "gxMoveForDrop:from:at:context:",
+          "gxInsertForDrop:at:context:",
+          "initWithModel:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource13SSGXMainModel",
+        "methods": [
+          "systemSources",
+          "setSystemSources:",
+          "applicationSources",
+          "setApplicationSources:",
+          "excludedSources",
+          "setExcludedSources:",
+          "systemExpanded",
+          "setSystemExpanded:",
+          "systemColumnTitlesVisible",
+          "applicationsExpanded",
+          "setApplicationsExpanded:",
+          "applicationsColumnTitlesVisible",
+          "excludedExpanded",
+          "setExcludedExpanded:",
+          "alertColumnVisible",
+          "deleteSelectedSource",
+          "setDeleteSelectedSource:",
+          "applicationsEmpty",
+          "applicationsEmptyMessageVisible",
+          "excludedVisible",
+          "applicationsHiddenAbove",
+          "setApplicationsHiddenAbove:",
+          "applicationsHiddenBelow",
+          "setApplicationsHiddenBelow:",
+          "applicationsHiddenAboveVisible",
+          "setApplicationsHiddenAboveVisible:",
+          "applicationsHiddenBelowVisible",
+          "setApplicationsHiddenBelowVisible:",
+          "excludedHiddenAbove",
+          "setExcludedHiddenAbove:",
+          "excludedHiddenBelow",
+          "setExcludedHiddenBelow:",
+          "excludedHiddenAboveVisible",
+          "setExcludedHiddenAboveVisible:",
+          "excludedHiddenBelowVisible",
+          "setExcludedHiddenBelowVisible:",
+          "settingsMenuPresented",
+          "setSettingsMenuPresented:",
+          "quickConfigManagerPresented",
+          "setQuickConfigManagerPresented:",
+          "quickConfigManagerModel",
+          "setQuickConfigManagerModel:",
+          "saveQuickConfigPresented",
+          "setSaveQuickConfigPresented:",
+          "saveQuickConfigModel",
+          "quickConfigSpinToken",
+          "setQuickConfigSpinToken:",
+          "quickConfigSpinIsSave",
+          "setQuickConfigSpinIsSave:",
+          "updateAvailableVisible",
+          "trialModeVisible",
+          "titleOffsetX",
+          "isPinned",
+          "setIsPinned:",
+          "windowExpanded",
+          "setWindowExpanded:",
+          "init",
+          "dealloc",
+          "selection",
+          "gxSelectionOrderForListWithContext:",
+          "gxMoveForDrop:from:at:context:",
+          "gxInsertForDrop:at:context:",
+          "refreshSourceRows",
+          "systemApplicationsResizeHandleVisible",
+          "saveCurrentQuickConfig",
+          "saveQuickConfigAs",
+          "manageQuickConfigs",
+          "dismissQuickConfigManager",
+          "dismissSaveQuickConfig",
+          "handleUndoKey:in:",
+          "handleKeyDown:in:",
+          "openEffectEditorFor:",
+          "isEffectEditorOpenFor:",
+          "closeEffectEditorFor:",
+          "revealHiddenSource:",
+          "addFavoriteWithReference:",
+          "importApplicationsFrom:intoExcluded:",
+          "modelDidChange:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource28SSGXVoiceOverSourceExpansion",
+        "methods": []
+      },
+      {
+        "name": "SSGXPresetManagerRowModel",
+        "methods": [
+          "gxTypeSelectLabel",
+          "manager",
+          "setManager:",
+          "preset",
+          "symbolBrowser",
+          "name",
+          "setName:",
+          "iconImage",
+          "modelTypeName",
+          "shortcut",
+          "recording",
+          "shortcutAXValue",
+          "symbolPickerPresented",
+          "setSymbolPickerPresented:",
+          "editing",
+          "setEditing:",
+          "initWithPreset:",
+          "sync",
+          "setIcon:",
+          "select",
+          "rename:",
+          "requestDelete",
+          "initWithModel:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22SSGXPresetManagerModel",
+        "methods": [
+          "group",
+          "title",
+          "persistChanges",
+          "sortsByName",
+          "rows",
+          "hasSelection",
+          "onDismiss",
+          "setOnDismiss:",
+          "showQuickConfigsInMenuBar",
+          "setShowQuickConfigsInMenuBar:",
+          "initWithGroup:title:persistChanges:sortsByName:",
+          "dealloc",
+          "modelDidCommit:",
+          "sync",
+          "select:",
+          "selectionDidChange",
+          "rename:",
+          "requestDelete:",
+          "deleteSelected",
+          "deleteSelectedTrigger",
+          "setDeleteSelectedTrigger:",
+          "dismiss",
+          "handleUndoKey:in:",
+          "handleDeleteKey:in:via:",
+          "finish",
+          "initWithModel:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource23SSGXWidthToggleIconView",
+        "methods": [
+          "raSetInfo:",
+          "raAnimate:",
+          "viewDidMoveToWindow",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource20SSGXMuteSpeakerModel",
+        "methods": [
+          "ringsImage",
+          "ringsPhase",
+          "offRingsVisible",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource16SSGXMuteMicModel",
+        "methods": [
+          "dot0Active",
+          "dot1Active",
+          "dot2Active",
+          "dot3Active",
+          "styles",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSourceMuteTimerPainter",
+        "methods": [
+          "drawInRect:withValue:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXSourceMuteTimerRingView",
+        "methods": [
+          "raSetInfo:",
+          "viewDidMoveToWindow",
+          "raDidAttachToModel",
+          "drawRect:",
+          "dealloc",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource31SSGXSourceDropDestinationAction",
+        "methods": [
+          "initWithAction:",
+          "performOn:providers:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource32SSGXSourceDropDestinationBinding",
+        "methods": [
+          "set:in:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSourceEffectDropTargetView",
+        "methods": [
+          "raSetInfo:",
+          "hitTest:",
+          "wantsUpdateLayer",
+          "updateLayer",
+          "drawRect:",
+          "draggingEntered:",
+          "draggingUpdated:",
+          "draggingExited:",
+          "prepareForDragOperation:",
+          "performDragOperation:",
+          "dealloc",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXExcludedStripeView",
+        "methods": [
+          "wantsUpdateLayer",
+          "updateLayer",
+          "raDidAttachToModel",
+          "raUpdateCustom",
+          "setFrameSize:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXMeterDisabledView",
+        "methods": [
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXSourceMeterView",
+        "methods": [
+          "raSetInfo:",
+          "viewDidMoveToWindow",
+          "viewDidHide",
+          "viewDidUnhide",
+          "raDidAttachToModel",
+          "raUpdateCustom",
+          "dealloc",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXColumnTitlesLayoutView",
+        "methods": [
+          "raSetInfo:",
+          "layoutChildren:inRect:animated:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXSourceHeaderLayoutView",
+        "methods": [
+          "raSetInfo:",
+          "layoutChildren:inRect:animated:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSourceListView",
+        "methods": [
+          "raSetInfo:",
+          "shouldPreserveRowView:forItem:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17SSSourceAlertScan",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource29GXMarkupAccessibilityHostView",
+        "methods": [
+          "accessibilityChildren",
+          "accessibilityTitle",
+          "accessibilityLabel",
+          "isAccessibilityExpanded",
+          "accessibilityValue",
+          "accessibilityHelp",
+          "accessibilitySelectedChildren",
+          "accessibilityTabs",
+          "accessibilityRoleDescription",
+          "accessibilityRole",
+          "accessibilityPerformPress",
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "focusedControlAXLabel",
+          "focusedControlAXValue",
+          "focusedControlAXHelp",
+          "accessibilityHitTest:",
+          "keyDown:",
+          "isAccessibilitySelectorAllowed:",
+          "isAccessibilityFocused",
+          "setAccessibilityFocused:",
+          "accessibilityCustomActions",
+          "isAccessibilityElement",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource31GXMarkupAccessibilityActionList",
+        "methods": [
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource31SSGXExcludedApplicationRowModel",
+        "methods": [
+          "gxTypeSelectLabel",
+          "reference",
+          "name",
+          "iconImage",
+          "setIconImage:",
+          "selected",
+          "styles",
+          "initWithReference:",
+          "sync",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource28SSGXExcludedApplicationsTree",
+        "methods": [
+          "rows",
+          "items",
+          "syncWith:",
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17SSGXSettingsModel",
+        "methods": [
+          "hotkey",
+          "exclusions",
+          "exclusionsDropTargeted",
+          "setExclusionsDropTargeted:",
+          "accessibilityPermissionGranted",
+          "accessibilityPermissionPromptVisible",
+          "superVolumeKeysDisabled",
+          "selectedTab",
+          "setSelectedTab:",
+          "selectTab:",
+          "showGeneral",
+          "showAudio",
+          "showAppearance",
+          "generalTabSelected",
+          "audioTabSelected",
+          "appearanceTabSelected",
+          "isInLoginItems",
+          "setIsInLoginItems:",
+          "playFeedback",
+          "setPlayFeedback:",
+          "versionCheckingEnabled",
+          "setVersionCheckingEnabled:",
+          "testReleasesEnabled",
+          "setTestReleasesEnabled:",
+          "updateChannelValue",
+          "superVolumeKeys",
+          "setSuperVolumeKeys:",
+          "latencyValue",
+          "setLatencyValue:",
+          "accentColorValue",
+          "setAccentColorValue:",
+          "accentSwatchImage",
+          "menuIconValue",
+          "setMenuIconValue:",
+          "menuIconImage",
+          "init",
+          "showAccessibilityPermissions",
+          "addExclusion:",
+          "retainExclusionMenu:delegate:",
+          "removeExclusionDisabled",
+          "removeSelectedExclusion",
+          "handleWindowKeyEquivalent:in:",
+          "windowStateDidChangeWithWindow:isVisible:appIsActive:frontmostBundleID:",
+          "windowAnimationResizeTime:",
+          "importExclusionsFrom:",
+          "syncExclusions",
+          "gxSelectionOrderForListWithContext:",
+          "gxMoveForDrop:from:at:context:",
+          "gxInsertForDrop:at:context:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource24AppPopupViewMenuDelegate",
+        "methods": [
+          "initWithSelected:window:",
+          "selected",
+          "setSelected:",
+          "popover",
+          "setPopover:",
+          "sourceMenuDidSelectSpecialApplication:customName:customIcon:",
+          "sourceMenuDidSelectApplication:",
+          "addApplicationWithRef:",
+          "sourceMenuDidUpdateRecents:",
+          "sourceMenuWillLoadRecents:",
+          "sourceMenuShouldPresentApplicationSelectorAsSheetInWindow",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSettingsPaneBackdropView",
+        "methods": [
+          "drawRect:",
+          "setFrameSize:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXThemeSwitcherView",
+        "methods": [
+          "acceptsFirstResponder",
+          "moveFirstResponderToAnchor",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource30SSGXStatusNotificationRowModel",
+        "methods": [
+          "container",
+          "setContainer:",
+          "title",
+          "setTitle:",
+          "message",
+          "setMessage:",
+          "showsDivider",
+          "setShowsDivider:",
+          "hovered",
+          "setHovered:",
+          "initWithContainer:",
+          "syncFrom:",
+          "dismiss",
+          "activate",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource19SSGXStatusItemModel",
+        "methods": [
+          "iconImage",
+          "setIconImage:",
+          "volumeDotsVisible",
+          "volumeSegmentsFilled",
+          "muteOverlayVisible",
+          "volumeChromeVisible",
+          "batteryVisible",
+          "batteryLevel",
+          "setBatteryLevel:",
+          "trialBadgeShowing",
+          "notificationItems",
+          "setNotificationItems:",
+          "notificationsPresented",
+          "setNotificationsPresented:",
+          "notificationsDetached",
+          "firstLaunchHighlightPresented",
+          "setFirstLaunchHighlightPresented:",
+          "firstLaunchTitleVisible",
+          "setFirstLaunchTitleVisible:",
+          "popoverPresented",
+          "setPopoverPresented:",
+          "volume",
+          "volumeLevel",
+          "toolTip",
+          "accessibilityVolume",
+          "didShowTrialWarningOnStatusItem",
+          "setDidShowTrialWarningOnStatusItem:",
+          "init",
+          "dealloc",
+          "modelDidCommit:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXStatusItemImagePainter",
+        "methods": [
+          "drawContentWithValue:",
+          "initWithImage:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXStatusItemFillPainter",
+        "methods": [
+          "copyWithZone:",
+          "raSetInfo:",
+          "drawInRect:withValue:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXDeviceNicknameTextField",
+        "methods": [
+          "textDidBeginEditing:",
+          "textDidEndEditing:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21DeviceWindowSelection",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource22SSGXDeviceSectionModel",
+        "methods": [
+          "deviceItems",
+          "setDeviceItems:",
+          "title",
+          "expanded",
+          "setExpanded:",
+          "airplayVisibilityTitle",
+          "setAirplayVisibilityTitle:",
+          "bluetoothPermissionMissing",
+          "setBluetoothPermissionMissing:",
+          "airplayPermissionMissing",
+          "setAirplayPermissionMissing:",
+          "bluetoothPermissionText",
+          "airplayPermissionText",
+          "setAirplayPermissionText:",
+          "setPermissionsWithBluetoothMissing:airplayMissing:airplayText:",
+          "headerRow",
+          "setHeaderRow:",
+          "permissionsRow",
+          "setPermissionsRow:",
+          "toggleExpanded",
+          "setDevices:",
+          "sidebarRowsWithLeadingGap:",
+          "permissionsBodyHeightForWidth:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource18SSGXDeviceRowModel",
+        "methods": [
+          "gxTypeSelectLabel",
+          "gxListDiscloseWithExpand:",
+          "section",
+          "setSection:",
+          "isDeviceRow",
+          "isHeaderRow",
+          "isPermissionsRow",
+          "title",
+          "expanded",
+          "hasLeadingGap",
+          "setHasLeadingGap:",
+          "showsAirplayToggle",
+          "airplayVisibilityTitle",
+          "bluetoothPermissionMissing",
+          "airplayPermissionMissing",
+          "airplayPermissionText",
+          "device",
+          "setDevice:",
+          "deviceID",
+          "name",
+          "iconImage",
+          "setIconImage:",
+          "selected",
+          "setSelected:",
+          "hidden",
+          "deviceConnecting",
+          "hovered",
+          "setHovered:",
+          "hideControlVisible",
+          "hideActionTitle",
+          "styles",
+          "initWithDevice:",
+          "isSelectable",
+          "gxListItemHeight",
+          "gxListItemHeightForWidth:",
+          "toggleSectionExpanded",
+          "syncFrom:",
+          "toggleHidden",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXDeviceRowButtonView",
+        "methods": [
+          "focusRingType",
+          "setFocusRingType:",
+          "drawFocusRingMask",
+          "focusRingMaskBounds",
+          "canBecomeKeyView",
+          "accessibilityFocusedUIElement",
+          "becomeFirstResponder",
+          "mouseDown:",
+          "menuForEvent:",
+          "accessibilityCustomActions",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXDeviceSectionHeaderView",
+        "methods": [
+          "focusRingType",
+          "setFocusRingType:",
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "accessibilityRole",
+          "accessibilityLabel",
+          "accessibilityValue",
+          "isAccessibilityExpanded",
+          "accessibilityHelp",
+          "accessibilityPerformPress",
+          "accessibilityCustomActions",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXDeviceHideToggleView",
+        "methods": [
+          "raUpdateCustom",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource24SSGXDeviceHotkeyRowModel",
+        "methods": [
+          "device",
+          "setDevice:",
+          "title",
+          "setTitle:",
+          "hotkey",
+          "disabled",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXDeviceLevelMeterView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "viewDidMoveToWindow",
+          "raDidAttachToModel",
+          "viewDidChangeBackingProperties",
+          "setFrameSize:",
+          "dealloc",
+          "drawRect:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCC11SoundSource24SSGXDeviceLevelMeterViewP33_21D7D0EB4BE5C0E006EB5321F43A0EA012DrawingLayer",
+        "methods": [
+          "drawInContext:",
+          "init",
+          "initWithLayer:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22GXMaxVolumeLinkPainter",
+        "methods": [
+          "drawInRect:",
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22SSGXDevicesWindowModel",
+        "methods": [
+          "axDeviceName",
+          "axDeviceDetailsLabel",
+          "windowStateDidChangeWithWindow:isVisible:appIsActive:frontmostBundleID:",
+          "windowWillHideWithWindow:",
+          "sidebarItems",
+          "setSidebarItems:",
+          "selectedHotkeyItems",
+          "setSelectedHotkeyItems:",
+          "selectedHotkeyInputItems",
+          "setSelectedHotkeyInputItems:",
+          "selectedHotkeyOutputItems",
+          "setSelectedHotkeyOutputItems:",
+          "priorityDeviceModel",
+          "symbolBrowser",
+          "priorityDeviceSheetPresented",
+          "setPriorityDeviceSheetPresented:",
+          "airplayShowing",
+          "setAirplayShowing:",
+          "airplayVisibilityTitle",
+          "permissionsVisible",
+          "setPermissionsVisible:",
+          "selectedDeviceID",
+          "setSelectedDeviceID:",
+          "hasSelectedDevice",
+          "selectedStatusConnected",
+          "selectedStatusConnecting",
+          "selectedStatusReadyToConnect",
+          "selectedStatusVisible",
+          "selectedIconValue",
+          "setSelectedIconValue:",
+          "selectedIconImage",
+          "symbolPickerPresented",
+          "setSymbolPickerPresented:",
+          "selectedPane",
+          "setSelectedPane:",
+          "selectedNotDual",
+          "selectedDeviceIsOutput",
+          "selectedDeviceIsInput",
+          "selectedDeviceIsDualDevice",
+          "selectedDeviceIsBluetoothDual",
+          "selectedCaptured",
+          "setSelectedCaptured:",
+          "selectedMuteMic",
+          "selectedOutputOnly",
+          "setSelectedOutputOnly:",
+          "selectedInputIsOutputOnly",
+          "selectedOutputOnlyMenuValue",
+          "setSelectedOutputOnlyMenuValue:",
+          "selectedVolume",
+          "setSelectedVolume:",
+          "selectedMuted",
+          "setSelectedMuted:",
+          "selectedMuteSpeaker",
+          "selectedVolumeStyles",
+          "selectedMaxVolume",
+          "setSelectedMaxVolume:",
+          "selectedVolumeDisabled",
+          "selectedMuteDisabled",
+          "selectedMaxVolumeDisabled",
+          "selectedForceSoftwareVolume",
+          "setSelectedForceSoftwareVolume:",
+          "selectedForceSoftwareVolumeDisabled",
+          "selectedBalance",
+          "setSelectedBalance:",
+          "selectedBalanceEnabled",
+          "selectedBalanceDisabled",
+          "selectedChannelsDisabled",
+          "selectedLeftChannel",
+          "setSelectedLeftChannel:",
+          "selectedRightChannel",
+          "setSelectedRightChannel:",
+          "selectedPaneInput",
+          "selectedPaneOutput",
+          "selectedPaneIO",
+          "selectedPaneShortcuts",
+          "selectedPaneAdvanced",
+          "lockVolume",
+          "setLockVolume:",
+          "lockBalance",
+          "setLockBalance:",
+          "lockSampleRate",
+          "setLockSampleRate:",
+          "lockSource",
+          "setLockSource:",
+          "lockMute",
+          "setLockMute:",
+          "lockVolumeDisabled",
+          "lockBalanceDisabled",
+          "lockSampleRateDisabled",
+          "lockSourceDisabled",
+          "lockMuteDisabled",
+          "canShowInputPane",
+          "canShowOutputPane",
+          "canShowShortcutsPane",
+          "canShowAdvancedPane",
+          "init",
+          "dealloc",
+          "gxSelectionOrderForListWithContext:",
+          "gxSelectionOrderIncludesUnlistedRows",
+          "modelDidChange:",
+          "beginVisibleDiscovery",
+          "endVisibleDiscovery",
+          "selectedDevice",
+          "device",
+          "selectedMeterDevice",
+          "statusDevice",
+          "visibleDetailDevice",
+          "allDevices",
+          "select:",
+          "toggleHidden:",
+          "makeInputDefault",
+          "makeOutputDefault",
+          "makeEffectsDefault",
+          "connectSelectedDevice",
+          "openPreferredOrder",
+          "nicknameEditing",
+          "setNicknameEditing:",
+          "sync",
+          "expandSectionFor:",
+          "sectionExpansionChanged",
+          "toggleAirplayVisibility",
+          "openPermissions",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource25SSDevicesWindowController",
+        "methods": [
+          "setupNewWindow",
+          "initWithWindow:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "GXSymbolReplacementView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "raSetInfo:",
+          "raUpdateCustom",
+          "viewDidHide",
+          "viewDidUnhide",
+          "raIsLeaf",
+          "setFrameSize:",
+          "viewDidMoveToWindow",
+          "layout",
+          "viewDidChangeEffectiveAppearance",
+          "raSetNeedsDisplay",
+          "viewDidChangeBackingProperties",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXInnerShadowPainter",
+        "methods": [
+          "raSetInfo:",
+          "drawRoundRectInRect:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXMaxVolumeTrackPainter",
+        "methods": [
+          "drawContentWithValue:",
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource10SSGXWindow",
+        "methods": [
+          "accessibilityFocusedUIElement",
+          "accessibilitySubrole",
+          "viewAnimationsDisabled",
+          "setViewAnimationsDisabled:",
+          "raSetInfo:",
+          "loadContentView",
+          "setFrameTarget:animated:",
+          "makeKeyAndOrderFront:",
+          "orderFrontRegardless",
+          "makeFirstResponder:",
+          "orderOut:",
+          "close",
+          "sendEvent:",
+          "cancelOperation:",
+          "animationResizeTime:",
+          "performKeyEquivalent:",
+          "observeThemeChanges",
+          "becomeKeyWindow",
+          "resignKeyWindow",
+          "dealloc",
+          "accessibilityRole",
+          "accessibilityTitle",
+          "initWithContentRect:styleMask:backing:defer:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXMaterialView",
+        "methods": [
+          "gxMaterial",
+          "setGxMaterial:",
+          "gxBlendingMode",
+          "setGxBlendingMode:",
+          "gxState",
+          "setGxState:",
+          "initWithFrame:",
+          "initWithCoder:",
+          "viewDidMoveToWindow",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_EBED5494DD8B372CF6B81C7206EAD20F24SSGXMaterialUnderlayView",
+        "methods": [
+          "raIsSelfPlaced",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_EBED5494DD8B372CF6B81C7206EAD20F24SSGXMaterialBackdropView",
+        "methods": [
+          "raIsSelfPlaced",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXMaterialContainerView",
+        "methods": [
+          "isFlipped",
+          "initWithFrame:",
+          "initWithCoder:",
+          "raSetInfo:",
+          "setFrameSize:",
+          "layout",
+          "viewDidChangeEffectiveAppearance",
+          "viewDidMoveToWindow",
+          "ssApplyPopoverShapeMask:fromLayer:",
+          "ssClipToPopoverShape:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXPixelCenteringView",
+        "methods": [
+          "raSetInfo:",
+          "layoutChildren:inRect:animated:",
+          "viewDidChangeBackingProperties",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXSectionStackLayoutView",
+        "methods": [
+          "raSetInfo:",
+          "raDesiredSize",
+          "contentHeightForWidth:",
+          "layoutChildren:inRect:animated:",
+          "viewDidMoveToWindow",
+          "touchResizeRecognized:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_EBED5494DD8B372CF6B81C7206EAD20F26SectionTouchResizeDelegate",
+        "methods": [
+          "gestureRecognizer:shouldReceiveTouch:",
+          "gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSectionResizeHandleView",
+        "methods": [
+          "raSetInfo:",
+          "viewWillMoveToWindow:",
+          "viewDidMoveToWindow",
+          "windowOcclusionChanged:",
+          "viewDidHide",
+          "viewDidUnhide",
+          "setFrameOrigin:",
+          "updateTrackingAreas",
+          "mouseEntered:",
+          "mouseMoved:",
+          "mouseExited:",
+          "hitTest:",
+          "mouseDownCanMoveWindow",
+          "acceptsFirstMouse:",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSectionResizeDragger",
+        "methods": [
+          "dealloc",
+          "dragStarted:withView:",
+          "dragMoved:",
+          "dragEnded:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXHSplitView",
+        "methods": [
+          "isFlipped",
+          "raIsLeaf",
+          "initWithFrame:",
+          "initWithCoder:",
+          "raSetInfo:",
+          "addSubview:",
+          "raSetChildren:",
+          "layoutChildren:inRect:animated:",
+          "raSetFrame:",
+          "setFrameSize:",
+          "layout",
+          "viewDidMoveToWindow",
+          "viewDidChangeBackingProperties",
+          "splitView:constrainSplitPosition:ofSubviewAt:",
+          "splitViewDidResizeSubviews:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_EBED5494DD8B372CF6B81C7206EAD20F20SSGXNativeHSplitView",
+        "methods": [
+          "adjustSubviews",
+          "accessibilityChildren",
+          "raIsFlexDriver",
+          "layout",
+          "drawRect:",
+          "mouseDown:",
+          "mouseDragged:",
+          "mouseUp:",
+          "hitTest:",
+          "resetCursorRects",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXMainPopoverTitleOffsetView",
+        "methods": [
+          "raSetInfo:",
+          "raSetViewValue:",
+          "raDesiredSize",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXTemplateImagePainter",
+        "methods": [
+          "copyWithZone:",
+          "raSetInfo:",
+          "drawContentWithValue:",
+          "initWithImage:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSpinnerView",
+        "methods": [
+          "viewDidMoveToWindow",
+          "raMeasureContentSize",
+          "raSetViewValue:",
+          "drawRect:",
+          "dealloc",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSliderDragger",
+        "methods": [
+          "dragStarted:withView:",
+          "hookEnded",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXLiveSliderDragger",
+        "methods": [
+          "dragStarted:withView:",
+          "dragMoved:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXSlider",
+        "methods": [
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "raSetInfo:",
+          "hitTest:",
+          "knobValue",
+          "setKnobValue:",
+          "raSetViewValue:",
+          "makeDragger",
+          "mouseDown:",
+          "scrollWheel:",
+          "handleFocusForEvent:",
+          "keyDown:",
+          "becomeFirstResponder",
+          "resignFirstResponder",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXCountingLabelView",
+        "methods": [
+          "raSetInfo:",
+          "raDidAttachToModel",
+          "raUpdateCustom",
+          "viewDidMoveToWindow",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXVolumeSliderView",
+        "methods": [
+          "dealloc",
+          "raSetInfo:",
+          "raDidAttachToModel",
+          "raUpdateCustom",
+          "valueFromPosition:",
+          "applyDetentsToValue:",
+          "accessibilityPerformIncrement",
+          "accessibilityPerformDecrement",
+          "drawTrackWithStyles:",
+          "raSetViewValue:",
+          "viewDidMoveToWindow",
+          "scrollWheel:",
+          "mouseDown:",
+          "keyDown:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_EBED5494DD8B372CF6B81C7206EAD20F25SSGXSliderAudioFadeDriver",
+        "methods": [
+          "owner",
+          "setOwner:",
+          "initWithOwner:",
+          "animateFrame:shouldStop:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXBoostChevronView",
+        "methods": [
+          "raSetNeedsDisplay",
+          "raUpdateContentSize",
+          "drawRect:",
+          "viewDidChangeBackingProperties",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXBoostChevronsView",
+        "methods": [
+          "raDidAttachToModel",
+          "raSetViewValue:",
+          "layout",
+          "didAddSubview:",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_EBED5494DD8B372CF6B81C7206EAD20F25SSGXBoostChevronTintLayer",
+        "methods": [
+          "drawInContext:",
+          "init",
+          "initWithLayer:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXDisabledOpacityView",
+        "methods": [
+          "raSetOpacity:",
+          "disabled",
+          "setDisabled:",
+          "disabledOpacity",
+          "setDisabledOpacity:",
+          "raSetEnabled:",
+          "raUpdateCustom",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "GXSegmentedControlView",
+        "methods": [
+          "raSetInfo:",
+          "raSetFrame:",
+          "layout",
+          "updateConstraints",
+          "raViewValue",
+          "raSetViewValue:",
+          "layoutChildren:inRect:animated:",
+          "raSetNeedsDisplay",
+          "drawRect:",
+          "raAnimate:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCC11SoundSource22GXSegmentedControlViewP33_EBED5494DD8B372CF6B81C7206EAD20F14CapsuleOverlay",
+        "methods": [
+          "raIsSelfPlaced",
+          "hitTest:",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource26SSGXOutputGroupDeviceModel",
+        "methods": [
+          "gxTypeSelectLabel",
+          "group",
+          "setGroup:",
+          "device",
+          "setDevice:",
+          "deviceID",
+          "name",
+          "iconImage",
+          "setIconImage:",
+          "deviceConnecting",
+          "controlsVisible",
+          "controlsDisabled",
+          "latencyMS",
+          "setLatencyMS:",
+          "latencyValue",
+          "setLatencyValue:",
+          "usesDeviceVolume",
+          "setUsesDeviceVolume:",
+          "selected",
+          "setSelected:",
+          "muted",
+          "setMuted:",
+          "visualMuted",
+          "muteSpeaker",
+          "volumeStyles",
+          "volume",
+          "setVolume:",
+          "volumeIdentity",
+          "volumeAccessibilityValue",
+          "volumeReadout",
+          "volumeReadoutReset",
+          "setVolumeReadoutReset:",
+          "initWithGroup:device:",
+          "syncFrom:device:",
+          "gxListItemHeight",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21SSGXOutputGroupsModel",
+        "methods": [
+          "symbolBrowser",
+          "groupItems",
+          "deviceItems",
+          "setDeviceItems:",
+          "selectedGroupIconValue",
+          "setSelectedGroupIconValue:",
+          "selectedGroupIconImage",
+          "symbolPickerPresented",
+          "setSymbolPickerPresented:",
+          "hasGroup",
+          "axGroupDetailsLabel",
+          "removeGroupDisabled",
+          "init",
+          "dealloc",
+          "modelDidChange:",
+          "beginVisibleDiscovery",
+          "endVisibleDiscovery",
+          "windowStateDidChangeWithWindow:isVisible:appIsActive:frontmostBundleID:",
+          "windowKeyStateDidChangeWithWindow:",
+          "handleWindowKeyEquivalent:in:",
+          "selectedGroup",
+          "select:",
+          "createGroup",
+          "deleteSelectedGroup",
+          "sync",
+          "gxAnimatesItemChange",
+          "setGxAnimatesItemChange:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXOutputGroupLatencyTextField",
+        "methods": [
+          "scrollWheel:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXOutputGroupLatencyStepper",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "mouseDown:",
+          "stepped:"
+        ]
+      },
+      {
+        "name": "SSGXOutputGroupChipView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "layout",
+          "viewDidChangeEffectiveAppearance"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource30SSOutputGroupsWindowController",
+        "methods": [
+          "initWithWindow:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource26SSGXPriorityDeviceRowModel",
+        "methods": [
+          "gxTypeSelectLabel",
+          "device",
+          "setDevice:",
+          "deviceID",
+          "name",
+          "isDefault",
+          "setIsDefault:",
+          "iconImage",
+          "setIconImage:",
+          "deviceConnecting",
+          "speakerIconVisible",
+          "microphoneIconVisible",
+          "effectsIconVisible",
+          "listPosition",
+          "setListPosition:",
+          "listCount",
+          "setListCount:",
+          "initWithDevice:",
+          "syncFrom:pane:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource23SSGXPriorityDeviceModel",
+        "methods": [
+          "deviceItems",
+          "setDeviceItems:",
+          "pane",
+          "setPane:",
+          "sortingEnabled",
+          "setSortingEnabled:",
+          "outputPaneSelected",
+          "inputPaneSelected",
+          "effectsPaneSelected",
+          "gxAnimatesItemChange",
+          "setGxAnimatesItemChange:",
+          "init",
+          "preferencePane",
+          "choosePane:",
+          "forget:",
+          "forgetSelected",
+          "handleDeleteKey:in:",
+          "close",
+          "sync",
+          "gxSelectionOrderForListWithContext:",
+          "gxMoveForDrop:from:at:context:",
+          "gxInsertForDrop:at:context:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXInlineLinkLabelView",
+        "methods": [
+          "raSetInfo:",
+          "mouseDown:",
+          "drawRect:",
+          "accessibilityPerformPress",
+          "isAccessibilitySelectorAllowed:",
+          "accessibilityCustomActions",
+          "accessibilityHelp",
+          "isAccessibilityElement",
+          "accessibilityChildren",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_D190946383BE9DDFA73C74F6CB77AF5321SSGXInlineLinkElement",
+        "methods": [
+          "accessibilityRole",
+          "accessibilityLabel",
+          "accessibilityParent",
+          "isAccessibilityEnabled",
+          "accessibilityPerformPress",
+          "accessibilityFrame",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_D190946383BE9DDFA73C74F6CB77AF5325SSGXInlineLinkTextElement",
+        "methods": [
+          "accessibilityRole",
+          "accessibilityValue",
+          "accessibilityParent",
+          "isAccessibilityEnabled",
+          "accessibilityFrame",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXHPEQSearchField",
+        "methods": [
+          "viewDidMoveToWindow",
+          "raSetViewValue:",
+          "keyDown:",
+          "control:textView:doCommandBySelector:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource26SSGXHPEQBrowserSourceModel",
+        "methods": [
+          "initWithProviderRows:",
+          "subModels",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource23SSGXHPEQBrowserRowModel",
+        "methods": [
+          "gxTypeSelectLabel",
+          "browser",
+          "setBrowser:",
+          "profile",
+          "title",
+          "setTitle:",
+          "manufacturerIndentVisible",
+          "setManufacturerIndentVisible:",
+          "versionIndentVisible",
+          "setVersionIndentVisible:",
+          "profileIndentVisible",
+          "setProfileIndentVisible:",
+          "expanded",
+          "profileSelectionVisible",
+          "doubleClick",
+          "setDoubleClick:",
+          "kind",
+          "setKind:",
+          "childRows",
+          "setChildRows:",
+          "initWithTitle:kind:profile:browser:",
+          "subModels",
+          "isSelectable",
+          "gxListItemHeight",
+          "matchesFilterText:",
+          "accessibilityRowLabel",
+          "accessibilityRowValue",
+          "activate",
+          "gxListDiscloseWithExpand:",
+          "modelChanged",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource26SSGXHPEQBrowserFooterModel",
+        "methods": [
+          "commitDisabled",
+          "setCommitDisabled:",
+          "modelChanged",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource20SSGXHPEQBrowserModel",
+        "methods": [
+          "itemsFilter",
+          "footer",
+          "hpeqBrowser",
+          "valueForKey:",
+          "valueForUndefinedKey:",
+          "searchText",
+          "setSearchText:",
+          "loading",
+          "setLoading:",
+          "deviceConnecting",
+          "statusMessage",
+          "setStatusMessage:",
+          "selectedProfileName",
+          "setSelectedProfileName:",
+          "searchFocused",
+          "setSearchFocused:",
+          "effect",
+          "setEffect:",
+          "owner",
+          "setOwner:",
+          "selectedProfile",
+          "setSelectedProfile:",
+          "archiveAtOpen",
+          "setArchiveAtOpen:",
+          "init",
+          "dealloc",
+          "beginFor:",
+          "selectFirstProfile",
+          "gxListMoveUpFromTop:",
+          "focusSearchFieldIn:",
+          "cancel",
+          "commit",
+          "handleDisappear",
+          "select:",
+          "modelDidChange:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "HPEQProfile",
+        "methods": [
+          "initWithName:provider:version:url:settings:",
+          "init",
+          "url",
+          "setUrl:",
+          "provider",
+          "setProvider:",
+          "version",
+          "setVersion:",
+          "loadSettingsAndReturnError:",
+          "isEqualToSettings:printingChanges:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource27SSGXConfiguredSymbolPainter",
+        "methods": [
+          "raSetInfo:",
+          "copyWithZone:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXDynamicSymbolPainter",
+        "methods": [
+          "drawInRect:withValue:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSymbolIconView",
+        "methods": [
+          "wantsUpdateLayer",
+          "updateLayer",
+          "viewDidHide",
+          "viewDidUnhide",
+          "viewDidMoveToWindow",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSymbolBrowserSearchField",
+        "methods": [
+          "viewDidMoveToWindow",
+          "raIsLeaf",
+          "raSetViewValue:",
+          "control:textView:doCommandBySelector:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource26SSGXSymbolBrowserCellModel",
+        "methods": [
+          "browser",
+          "setBrowser:",
+          "symbolName",
+          "hasIcon",
+          "accessibilityName",
+          "initWithSymbolName:browser:",
+          "select",
+          "setSelect:",
+          "isSelectable",
+          "matchesFilterText:",
+          "choose",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource29SSGXSymbolBrowserSectionModel",
+        "methods": [
+          "title",
+          "initWithTitle:cells:",
+          "subModels",
+          "isSelectable",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource28SSGXSymbolBrowserSourceModel",
+        "methods": [
+          "initWithSections:",
+          "subModels",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_ECB5D74212179C84879167370CEEE19923SSGXSymbolBrowserFilter",
+        "methods": [
+          "onModelsChanged",
+          "setOnModelsChanged:",
+          "modelChanged",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource26SSGXSymbolBrowserGridModel",
+        "methods": [
+          "cell0",
+          "cell1",
+          "cell2",
+          "cell3",
+          "cell4",
+          "initWithCells:",
+          "cells",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource30SSGXSymbolBrowserListItemModel",
+        "methods": [
+          "title",
+          "isHeader",
+          "grid",
+          "headerVisible",
+          "setHeaderVisible:",
+          "gridVisible",
+          "setGridVisible:",
+          "initWithHeader:",
+          "initWithCells:",
+          "gxListItemHeight",
+          "isSelectable",
+          "modelChanged",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22SSGXSymbolBrowserModel",
+        "methods": [
+          "rowItems",
+          "setRowItems:",
+          "searchText",
+          "setSearchText:",
+          "selectedIcon",
+          "setSelectedIcon:",
+          "defaultSymbol",
+          "setDefaultSymbol:",
+          "restoreButtonTitle",
+          "selectDisabled",
+          "searchFocused",
+          "setSearchFocused:",
+          "presented",
+          "setPresented:",
+          "itemsFilter",
+          "rowItemsChangedBySearch",
+          "setRowItemsChangedBySearch:",
+          "onChoose",
+          "setOnChoose:",
+          "selection",
+          "updateSelectedIcon:",
+          "handleKeyDown:",
+          "focus:",
+          "moveKeyboardFocusFor:",
+          "typeSelect:",
+          "choose:",
+          "restoreDefault",
+          "selectFocused",
+          "dismiss",
+          "scrollFocusedRowIntoView",
+          "cellWithSymbol:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource18SSGXMenuMeterModel",
+        "methods": [
+          "source",
+          "setSource:",
+          "meter",
+          "setMeter:",
+          "toolTipHandler",
+          "setToolTipHandler:",
+          "iconMuted",
+          "setIconMuted:",
+          "meterVisible",
+          "setMeterVisible:",
+          "meterDrawDisabled",
+          "setMeterDrawDisabled:",
+          "sourceName",
+          "accessibilityValue",
+          "muteEnabled",
+          "accessibilityHint",
+          "muteOverlayVisible",
+          "initWithSource:",
+          "modelDidChange:",
+          "dealloc",
+          "sync",
+          "iconImageWithDarkMode:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXMuteMarkPainter",
+        "methods": [
+          "drawInRect:withValue:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXMuteKnockoutPainter",
+        "methods": [
+          "init"
+        ]
+      },
+      {
+        "name": "SSGXMuteKnockoutView",
+        "methods": [
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCC11SoundSource20SSGXMuteKnockoutViewP33_342A92FA947F01FB77B96B5B5725F75D9MaskLayer",
+        "methods": [
+          "drawInContext:",
+          "init",
+          "initWithLayer:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXMenuMeterIconView",
+        "methods": [
+          "viewDidMoveToWindow",
+          "viewDidChangeEffectiveAppearance",
+          "viewDidChangeBackingProperties",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXMenuMeterView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "viewDidMoveToWindow",
+          "setFrameSize:",
+          "dealloc",
+          "drawRect:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource30SSGXQuickConfigStatusItemModel",
+        "methods": [
+          "title",
+          "setTitle:",
+          "accessibilityValue",
+          "loadSpinToken",
+          "setLoadSpinToken:",
+          "menuPresented",
+          "setMenuPresented:",
+          "quickConfigChoice",
+          "setQuickConfigChoice:",
+          "menuItems",
+          "setMenuItems:",
+          "init",
+          "dealloc",
+          "modelDidChange:",
+          "modelDidCommit:",
+          "sync",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17SSGraphController",
+        "methods": [
+          "applyWorkgroupPolicies",
+          "applyGraphPoliciesTo:mayClearWorkgroupPlayer:",
+          "description",
+          "uuid",
+          "model",
+          "device",
+          "isSharedGraph",
+          "workgroupDevice",
+          "setWorkgroupDevice:",
+          "graph",
+          "setGraph:",
+          "remoteGraph",
+          "setRemoteGraph:",
+          "lastAppliedGraphFingerprint",
+          "setLastAppliedGraphFingerprint:",
+          "graphUID",
+          "initWithModel:device:isSharedGraph:",
+          "modelDidChange:",
+          "dealloc",
+          "stopAndDeleteGraph",
+          "update",
+          "nodeLock",
+          "setNodeLock:",
+          "sourceNodes",
+          "setSourceNodes:",
+          "effectNodes",
+          "setEffectNodes:",
+          "needsFullStatePass",
+          "setNeedsFullStatePass:",
+          "lastFullStatePass",
+          "setLastFullStatePass:",
+          "lastMeterStatePass",
+          "setLastMeterStatePass:",
+          "_updateWithModel:smoothing:error:",
+          "updateGraphWithConfig:fingerprint:error:",
+          "desiredGraphOnDemand",
+          "workgroupUID",
+          "setWorkgroupUID:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCC11SoundSource17SSGraphControllerP33_DD6234A2CAA93ED553FCA09A7277A74923ModelListCommitObserver",
+        "methods": [
+          "init",
+          "dealloc",
+          "modelDidCommit:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource13SSHolderGraph",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource20SSProxyPlayerProcess",
+        "methods": []
+      },
+      {
+        "name": "SSGXGenericAUGroupHeaderView",
+        "methods": [
+          "accessibilityRole",
+          "accessibilityRoleDescription",
+          "accessibilityLabel",
+          "accessibilityValue",
+          "isAccessibilityExpanded",
+          "accessibilityHelp",
+          "accessibilityPerformPress",
+          "makeDragger",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXGenericAUGroupHeaderDragger",
+        "methods": [
+          "dragStarted:withView:",
+          "dragMoved:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_B44D7150062C4084DD35C918AFCA287F16GXImageTintFlush",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource11AppActivity",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource16VolumeController",
+        "methods": [
+          "init",
+          "id",
+          "hash",
+          "uuid",
+          "setUuid:",
+          "VOMuteRejection",
+          "setVOMuteRejection:",
+          "volumeIdentity",
+          "muted",
+          "setMuted:",
+          "userSetMuted",
+          "setUserSetMuted:",
+          "userSetVolumeCB",
+          "setUserSetVolumeCB:",
+          "userSetVolume",
+          "setUserSetVolume:",
+          "volume",
+          "setVolume:",
+          "muteTimer",
+          "effectiveVolume",
+          "limit",
+          "setLimit:",
+          "rangeMax",
+          "setRangeMax:",
+          "rangeMin",
+          "setRangeMin:",
+          "tapVolume",
+          "setTapVolume:",
+          "routeVolume",
+          "setRouteVolume:",
+          "initWithDevice:VOmuteRejection:",
+          "dealloc",
+          "playsSFX",
+          "setPlaysSFX:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSDeviceVolumeController",
+        "methods": [
+          "device",
+          "setDevice:",
+          "initWithDevice:",
+          "init",
+          "loadPlist",
+          "setLoadPlist:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSAppController",
+        "methods": [
+          "userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:",
+          "openAudioMIDISetup:",
+          "openSystemSettings:",
+          "policiesClass",
+          "preferencesClass",
+          "preferencesWindowClass",
+          "audioPoliciesClass",
+          "noticeWindow",
+          "setNoticeWindow:",
+          "applicationWillFinishLaunching:",
+          "debuggers",
+          "checkDebuggerOptions",
+          "applicationThemeDidChange",
+          "mainPopoverController",
+          "setMainPopoverController:",
+          "mainPopover",
+          "mainPopoverDontMake",
+          "mainStatusItemButton",
+          "applicationDidFinishLaunching:",
+          "hasFinishedLaunching",
+          "setHasFinishedLaunching:",
+          "applicationDidFinishWelcoming",
+          "showNoiseAlert:",
+          "debuggingPersistenceResetPaths",
+          "didPerformFactoryReset",
+          "applicationShouldHandleReopen:hasVisibleWindows:",
+          "lockUserInterface",
+          "unlockUserInterface",
+          "updateActiviationPolicy",
+          "applicationShouldTerminate:",
+          "skipsQuitAlerts",
+          "setSkipsQuitAlerts:",
+          "quicktourController",
+          "setQuicktourController:",
+          "permissionsManager",
+          "setPermissionsManager:",
+          "showQuickTour",
+          "applicationWillBeginWelcoming",
+          "showPermissionsWindow",
+          "showPermissionsWindowForBluetoothPermission",
+          "showPermissionsWindowForNetworkPermission",
+          "showPermissionsWindowForAccessibilityPermission",
+          "showUninstallWindowWithIsReinstalling:",
+          "hasStartedWelcome",
+          "setHasStartedWelcome:",
+          "showMainPopoverWithActivate:",
+          "hideMainPopoverWithAnimated:",
+          "showGXQuickConfigManager",
+          "showDevicesWindowWithFocusing:",
+          "loadQuickConfigWithUuid:",
+          "toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:",
+          "showPrefs:",
+          "showAbout:",
+          "showSecretAbout:",
+          "showTrialActivation:",
+          "showRegistration:",
+          "showHelp:",
+          "showReleaseNotes:",
+          "showReleaseNotesForContext:",
+          "showAlertsWindow:",
+          "showAlertsWindowFocusing:",
+          "showGroupsWindowWithFocusing:",
+          "quickConfigsGroup",
+          "closeNonPinnedEffectPopoversWithAnimated:ignoring:",
+          "startWindowLevelObservers",
+          "settingsModeActive",
+          "beginSettingsMode",
+          "endSettingsMode",
+          "updateWindowLevelsWithIgnoring:",
+          "trackLastActiveApp",
+          "permissionsUpdated",
+          "processListUpdated",
+          "handleReopenEvent:withReplyEvent:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource19SSWindowLevelPolicy",
+        "methods": []
+      },
+      {
+        "name": "SSGXSystemCheckBoxButton",
+        "methods": [
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "raSetInfo:",
+          "intrinsicContentSize",
+          "accessibilityLabel",
+          "accessibilityHelp",
+          "accessibilityRole",
+          "accessibilityValue",
+          "accessibilityPerformPress",
+          "raMeasureContentSize",
+          "raSetFrame:",
+          "setFrameSize:",
+          "raIsLeaf",
+          "raViewValue",
+          "raSetViewValue:",
+          "toggleValue:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXSystemCheckBoxLabelView",
+        "methods": [
+          "mouseDown:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "GXKeyEquivalentGlyphsView",
+        "methods": [
+          "isFlipped",
+          "raViewValue",
+          "raSetViewValue:",
+          "raMeasureContentSize",
+          "raUpdateCustomStyles",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXSharedBatteryIconHostView",
+        "methods": [
+          "raSetInfo:",
+          "raMeasureContentSize",
+          "raUpdateCustom",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXTextField",
+        "methods": [
+          "viewDidMoveToWindow",
+          "raIsLeaf",
+          "raUpdateCustom",
+          "control:textView:doCommandBySelector:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource24SSGXQuickConfigsIconView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "raIsLeaf",
+          "setFrameSize:",
+          "layout",
+          "viewDidChangeEffectiveAppearance",
+          "viewDidMoveToWindow",
+          "raUpdateCustomStyles",
+          "raViewValue",
+          "raSetViewValue:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_23FBF6A9A00FED2A1364AFEE18B6DFBD21SSGXMirroredImageView",
+        "methods": [
+          "layer",
+          "setLayer:",
+          "setFrameSize:",
+          "viewDidMoveToWindow",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXCompactExpandingSlotView",
+        "methods": [
+          "raSetInfo:",
+          "raSetFrame:",
+          "layout",
+          "viewDidMoveToWindow",
+          "dealloc",
+          "raDesiredSize",
+          "layoutChildren:inRect:animated:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXWidthProgressContentView",
+        "methods": [
+          "raSetInfo:",
+          "raSetFrame:",
+          "layout",
+          "viewDidMoveToWindow",
+          "dealloc",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXEditableTextField",
+        "methods": [
+          "control:textView:doCommandBySelector:",
+          "cancelOperation:",
+          "becomeFirstResponder",
+          "textDidEndEditing:",
+          "viewWillMoveToWindow:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXEditableTextFieldInput",
+        "methods": [
+          "raSetInfo:",
+          "raSetViewValue:",
+          "textDidChange:",
+          "raIsLeaf",
+          "raMeasureContentSize",
+          "hitTest:",
+          "mouseDown:",
+          "acceptsFirstResponder",
+          "resetCursorRects",
+          "drawRect:",
+          "becomeFirstResponder",
+          "selectText:",
+          "setFrameSize:",
+          "dealloc",
+          "textDidEndEditing:",
+          "abortEditing",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXEditableTextFieldHost",
+        "methods": [
+          "dealloc",
+          "raSetInfo:",
+          "raContentSize",
+          "raSetViewValue:",
+          "raUpdateCustomStyles",
+          "viewDidMoveToWindow",
+          "isAccessibilityElement",
+          "accessibilityRole",
+          "accessibilityRoleDescription",
+          "accessibilityLabel",
+          "accessibilityTitle",
+          "accessibilityValue",
+          "accessibilityHelp",
+          "accessibilityChildren",
+          "isAccessibilitySelectorAllowed:",
+          "accessibilityPerformPress",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXEditableTextFieldPencilButton",
+        "methods": [
+          "accessibilityLabel",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_69CF18BEB5C97567FB18FC109A344C4D31GXEditableTextFieldPreviewModel",
+        "methods": [
+          "name",
+          "setName:",
+          "editing",
+          "setEditing:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXEffectCardToggleView",
+        "methods": [
+          "menuForEvent:",
+          "mouseDown:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSGXEffectRowDynamicView",
+        "methods": [
+          "raIsLeaf",
+          "raIsFlexDriver",
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "keyDown:",
+          "raSetInfo:",
+          "raSetFrame:",
+          "raUpdateCustom",
+          "layout",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXLoadingShimmerView",
+        "methods": [
+          "raSetViewValue:",
+          "setFrameSize:",
+          "viewDidChangeEffectiveAppearance",
+          "viewDidMoveToWindow",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_86F1A50B882CAB7C518864B80D86449226SSGXEffectNodeDocumentView",
+        "methods": [
+          "isFlipped",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_86F1A50B882CAB7C518864B80D86449222SSGXEffectNodeScroller",
+        "methods": [
+          "raauStaysAboveRemoteView",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_86F1A50B882CAB7C518864B80D86449224SSGXEffectNodeScrollView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "flashScrollers"
+        ]
+      },
+      {
+        "name": "SSGXEffectNodeHostView",
+        "methods": [
+          "raIsLeaf",
+          "initWithFrame:",
+          "initWithCoder:",
+          "accessibilityChildren",
+          "intrinsicContentSize",
+          "raDidAttachToModel",
+          "viewWillMoveToWindow:",
+          "viewDidMoveToWindow",
+          "layout",
+          "raSetFrame:",
+          "setFrameSize:",
+          "raMeasureContentSize",
+          "dealloc",
+          "modelDidChange:",
+          "easeTileFrame",
+          "windowFrameDidResize",
+          "scheduleScreenFit",
+          "fitToScreen",
+          "viewWillStartLiveResize",
+          "viewDidEndLiveResize",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource24SSGXEffectEditorKeyboard",
+        "methods": []
+      },
+      {
+        "name": "SSGXDeviceNameLabelView",
+        "methods": [
+          "setFrameSize:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource7SSMeter",
+        "methods": [
+          "fps",
+          "setFps:",
+          "disabled",
+          "setDisabled:",
+          "active",
+          "setActive:",
+          "drawDisabled",
+          "setDrawDisabled:",
+          "dealloc",
+          "holdUntil",
+          "setHoldUntil:",
+          "clipStereoMax",
+          "peakStereoMax",
+          "rmsStereoMax",
+          "adoptLevelsFrom:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17SSMeterController",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource24RunLoopLocalEventMonitor",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource26StatusItemReplicantUpdater",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource17SSPresetGroupList",
+        "methods": []
+      },
+      {
+        "name": "SSPresetGroup",
+        "methods": [
+          "init",
+          "dealloc",
+          "description",
+          "expectedSubModelClass",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource15CAARRenderLayer",
+        "methods": [
+          "isGeometryFlipped",
+          "setGeometryFlipped:",
+          "renderInContext:",
+          "init",
+          "initWithLayer:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSHeadphoneEQModel",
+        "methods": [
+          "browserModel",
+          "profileBrowserPresented",
+          "setProfileBrowserPresented:",
+          "init",
+          "axValueDescription",
+          "presetSummary",
+          "presetIconImage",
+          "presetIconVisible",
+          "profileBrowserVisible",
+          "presetSettings",
+          "setPresetSettings:",
+          "setupObservers",
+          "modelDidCommit:",
+          "stopObservers",
+          "resetNodeForMissingProfileIfNeeded",
+          "closeEditor",
+          "openProfileBrowser",
+          "importHeadphoneProfile",
+          "importHeadphoneProfileFrom:error:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource18SSUserNotification",
+        "methods": [
+          "post",
+          "title",
+          "setTitle:",
+          "subtitle",
+          "setSubtitle:",
+          "message",
+          "setMessage:",
+          "timeout",
+          "setTimeout:",
+          "primaryAction",
+          "setPrimaryAction:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource27SSUserNotificationContainer",
+        "methods": [
+          "initWithNotification:",
+          "dealloc",
+          "id",
+          "setId:",
+          "notification",
+          "setNotification:",
+          "dismissed",
+          "setDismissed:",
+          "mouseHover",
+          "setMouseHover:",
+          "presented",
+          "setPresented:",
+          "setTimeoutWithTimeout:",
+          "postAsUserNotification",
+          "userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17SSAnimationDriver",
+        "methods": [
+          "handleDisplayLinkUpdate",
+          "startAnimatingWithFps:block:",
+          "stopAnimatingWithId:",
+          "animateFrame:shouldStop:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSOverlayScroller",
+        "methods": [
+          "initWithFrame:",
+          "viewDidMoveToSuperview",
+          "dealloc",
+          "initWithCoder:",
+          "acceptsFirstResponder",
+          "canBecomeKeyView",
+          "updateLayer",
+          "doubleValue",
+          "setDoubleValue:",
+          "knobProportion",
+          "setKnobProportion:",
+          "fadeOut",
+          "rectForPart:",
+          "updateTrackingAreas",
+          "mouseDown:",
+          "mouseEntered:",
+          "mouseExited:",
+          "trackKnob:",
+          "viewDidChangeEffectiveAppearance",
+          "frame",
+          "setFrame:",
+          "layout",
+          "raIsSelfPlaced",
+          "hitTest:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXScrollView",
+        "methods": [
+          "reflectScrolledClipView:",
+          "raSetInfo:",
+          "accessibilityHitTest:",
+          "frame",
+          "setFrame:",
+          "scrollerStyle",
+          "setScrollerStyle:",
+          "tile",
+          "flashScrollers",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21GXMenuItemHostingView",
+        "methods": [
+          "initWithCoder:",
+          "viewDidMoveToWindow",
+          "setFrameSize:",
+          "layout",
+          "hitTest:",
+          "updateTrackingAreas",
+          "mouseEntered:",
+          "mouseExited:",
+          "mouseDown:",
+          "mouseUp:",
+          "keyDown:",
+          "drawRect:",
+          "viewDidChangeEffectiveAppearance",
+          "accessibilityRole",
+          "accessibilityChildren",
+          "accessibilityLabel",
+          "accessibilityValue",
+          "accessibilityHelp",
+          "accessibilityCustomActions",
+          "accessibilityPerformPress",
+          "initWithFrame:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21MenuKeyEquivalentView",
+        "methods": [
+          "isFlipped",
+          "intrinsicContentSize",
+          "drawRect:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource15HostingViewItem",
+        "methods": [
+          "accessibilityPerformPress",
+          "accessibilityChildren",
+          "accessibilityCustomActions",
+          "accessibilityLabel",
+          "isAccessibilityEnabled",
+          "initWithTitle:action:keyEquivalent:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource18MenuItemEffectView",
+        "methods": [
+          "init",
+          "isHidden",
+          "setHidden:",
+          "updateLayer",
+          "initWithCoder:",
+          "initWithFrame:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource19FocusedNotification",
+        "methods": []
+      },
+      {
+        "name": "SSModelSource",
+        "methods": [
+          "gxTypeSelectLabel",
+          "nodeIDWithDevice::extraHash:",
+          "deviceScopedNodeLocalID:device:",
+          "graphChannelCountFor:",
+          "graphSampleRateFor:",
+          "effectFormatHostingDevice",
+          "syncEffectAudioUnitFormatsUsing:",
+          "preferredEffectHostingDevice",
+          "needsProxyPlayback",
+          "localPlaybackPlayerDeviceFor:",
+          "hasMultipleActiveOutputDevices",
+          "activeOutputCaptureDevices",
+          "refreshSharedEffectHostDevice",
+          "isRedirectingToSpecificDevice",
+          "workgroupDeviceFor:",
+          "needsSharedGraph",
+          "sharedGraphPlaysOutput",
+          "sharedGraphHostDevice",
+          "holderSourceNodeWithDevice:channels:",
+          "onDemandFor:",
+          "modifiesAudioOn:hasProcessingEffects:",
+          "passthroughSyncOffsetFor:frames:",
+          "processingEffectsLatency",
+          "effectNodeIDWithEffect:device:",
+          "sharedEffectNodeIDWithEffect:hostDevice:",
+          "hostsKeepAliveAudioUnitsWithDevice:isSharedGraph:",
+          "effectIDWithEffect:device:",
+          "captureUID",
+          "capturePrecedenceWithRemoteSessions:",
+          "tooltipBase",
+          "optionsPopoverTitle",
+          "sourceOptionsMenuBarTitle",
+          "sourceOptionsMenuBarLabel",
+          "meterUsesToggle",
+          "meteringEnabledForOptions",
+          "setMeteringEnabledForOptions:",
+          "volumeHelp",
+          "muteHelp",
+          "faveHelp",
+          "boostHelp",
+          "disclosureHelp",
+          "stopExcludingHelp",
+          "addEffectHelp",
+          "volumeVisible",
+          "volumeEnabled",
+          "muteEnabled",
+          "volumeDisabled",
+          "muteDisabled",
+          "volumeReadoutDimmed",
+          "muteDimmed",
+          "showScreenCaptureAlert",
+          "showExclusiveAlert",
+          "showUnsupportedDeviceAlert",
+          "showMuteWarning",
+          "isShowingAlert",
+          "syncHotkeyRows",
+          "prepareMeter",
+          "gxListItemHeight",
+          "canAcceptEffectDrop:copying:",
+          "acceptEffectDrop:copying:",
+          "resetOptionsWithCompletion:",
+          "openEffectEditorFor:",
+          "isEffectEditorOpenFor:",
+          "closeEffectEditorFor:",
+          "closeUnpinnedEffectEditorsWithExcept:",
+          "expanded",
+          "setExpanded:",
+          "axDesc",
+          "iconImage",
+          "meterDrawDisabled",
+          "muteUsesMicrophone",
+          "muteVisualMuted",
+          "muteSpeaker",
+          "muteMic",
+          "faveVisible",
+          "faveSlotEmpty",
+          "contentExpandedVisible",
+          "deviceMenuVisible",
+          "deviceConnecting",
+          "deviceIconImage",
+          "removeExclusionVisible",
+          "showBoost",
+          "showDisclosure",
+          "excluded",
+          "excludedSource",
+          "muted",
+          "setMuted:",
+          "volume",
+          "setVolume:",
+          "volumeRangeMax",
+          "volumeLimit",
+          "volumeStyles",
+          "volumeIdentity",
+          "volumeReadout",
+          "volumeReadoutReset",
+          "setVolumeReadoutReset:",
+          "rowBackgroundStyles",
+          "doubleClick",
+          "setDoubleClick:",
+          "deviceName",
+          "setDeviceName:",
+          "hostsEffects",
+          "showEffectsList",
+          "effectsFooterVisible",
+          "hotkeyFooterVisible",
+          "hotkeysExpandedVisible",
+          "effectsBypassed",
+          "latencyWarningVisible",
+          "effectsOptionVisible",
+          "expansionEffectsVisible",
+          "expansionSimpleFooterVisible",
+          "expansionOptionsVisible",
+          "expansionSampleRateVisible",
+          "expansionSampleRateHidden",
+          "muteTimerActive",
+          "muteTimerProgress",
+          "muteMenuItems",
+          "supportsFallbackCapture",
+          "bypassEffectsKeyEquivalent",
+          "optionsAdvancedVisible",
+          "resetOptionsDisabled",
+          "meterStrategySummary",
+          "meterStrategy",
+          "setMeterStrategy:",
+          "alertVisible",
+          "alertTitle",
+          "expansionSampleRateDevice",
+          "startMuteTimer:",
+          "toggleMute",
+          "stopExcluding",
+          "willRemoveFromSuperModel",
+          "init",
+          "finishBootstrap",
+          "dealloc",
+          "description",
+          "movable",
+          "visible",
+          "boostTimer",
+          "tapActivity",
+          "setTapActivity:",
+          "sharedEffectHostDevice",
+          "setSharedEffectHostDevice:",
+          "id",
+          "defaultEffects",
+          "setDefaultEffects:",
+          "supportedEffects",
+          "setSupportedEffects:",
+          "sourceImageBuilder",
+          "setSourceImageBuilder:",
+          "sourceImageRevision",
+          "setSourceImageRevision:",
+          "sourceImageScale",
+          "setSourceImageScale:",
+          "symbolIconName",
+          "setSymbolIconName:",
+          "_sourceImage",
+          "set_sourceImage:",
+          "sourceImage",
+          "refreshSourceImage",
+          "sourceImageFor:",
+          "uuid",
+          "setUuid:",
+          "hasFave",
+          "setHasFave:",
+          "hasBoost",
+          "setHasBoost:",
+          "volumeController",
+          "setVolumeController:",
+          "deviceSelection",
+          "setDeviceSelection:",
+          "name",
+          "setName:",
+          "faved",
+          "setFaved:",
+          "position",
+          "setPosition:",
+          "boost",
+          "setBoost:",
+          "menuBar",
+          "setMenuBar:",
+          "isExcluded",
+          "setIsExcluded:",
+          "showInMenuBar",
+          "hostsFX",
+          "setHostsFX:",
+          "canShowInMenuBar",
+          "setCanShowInMenuBar:",
+          "isActive",
+          "controlsDisabled",
+          "setControlsDisabled:",
+          "disableEffects",
+          "setDisableEffects:",
+          "effects",
+          "setEffects:",
+          "loadedEffects",
+          "hasDeferredEffects",
+          "loadDeferredEffects",
+          "loadDeferredEffectWithUuid:",
+          "selectedEffects",
+          "hotkeys",
+          "setHotkeys:",
+          "hotkeysExpanded",
+          "setHotkeysExpanded:",
+          "rowFace",
+          "setRowFace:",
+          "deleteSelectedEffect",
+          "setDeleteSelectedEffect:",
+          "hasSelectedEffects",
+          "holdsFirstResponder",
+          "setHoldsFirstResponder:",
+          "drawsSelected",
+          "rowDrawsSelected",
+          "modelDidChange:",
+          "styles",
+          "visibleEffects",
+          "nudgeEffects:up:",
+          "gxMoveForDrop:from:at:context:",
+          "moveDroppedEffects:at:",
+          "gxInsertForDrop:at:context:",
+          "showFXBadge",
+          "setShowFXBadge:",
+          "hasDevices",
+          "menuPresented",
+          "setMenuPresented:",
+          "isExpanded",
+          "setIsExpanded:",
+          "expandedWhileDragging",
+          "setExpandedWhileDragging:",
+          "userSetExpanded",
+          "setUserSetExpanded:",
+          "forceStereoMixdownMode",
+          "setForceStereoMixdownMode:",
+          "stereoMixDownMode",
+          "meterShouldBeEnabled",
+          "shouldEnableMeter",
+          "shouldEnableCaptureWithDevice:",
+          "updateTapModel",
+          "meterNode",
+          "setMeterNode:",
+          "undoStepNameWithOld:new:",
+          "loadPlist",
+          "setLoadPlist:",
+          "isMatchFor:",
+          "settingsUnchanged",
+          "hasRegisteredHotkey",
+          "registeredHotkeys",
+          "lastHotkeyTrigger",
+          "setLastHotkeyTrigger:",
+          "validateDrop:",
+          "resolveDroppedEffects:",
+          "copyDroppedEffects:",
+          "validateDroppedItems:",
+          "transformDrop:",
+          "setupObservers",
+          "setupTapActivityObservers",
+          "setupVolumeControllerObservers",
+          "setupDeviceSelectionObservers",
+          "refreshObservedState",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSDeviceModelSource",
+        "methods": [
+          "shouldEnableMeter",
+          "shouldEnableCaptureWithDevice:",
+          "movable",
+          "init"
+        ]
+      },
+      {
+        "name": "SSOutputDeviceModelSource",
+        "methods": [
+          "dealloc",
+          "setupVolumeControllerObservers",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSInputDeviceModelSource",
+        "methods": [
+          "shouldEnableCaptureWithDevice:",
+          "setupVolumeControllerObservers",
+          "init"
+        ]
+      },
+      {
+        "name": "SSFXDeviceModelSource",
+        "methods": [
+          "shouldEnableCaptureWithDevice:",
+          "init"
+        ]
+      },
+      {
+        "name": "SSAppModelSource",
+        "methods": [
+          "capturePrecedenceWithRemoteSessions:",
+          "captureUID",
+          "isMatchFor:",
+          "init",
+          "dealloc",
+          "_processes",
+          "set_processes:",
+          "processes",
+          "setProcesses:",
+          "appRef",
+          "setAppRef:",
+          "controlsDisabled",
+          "setControlsDisabled:",
+          "capturesIfPlayingOn:",
+          "playsOnUnlistedOutput",
+          "shouldEnableCaptureWithDevice:",
+          "shouldEnableMeter",
+          "visible",
+          "isVisibleRegardlessOfFaveStatus",
+          "isActive",
+          "showInMenuBar",
+          "captureReferences",
+          "volumeController",
+          "setVolumeController:",
+          "userSetExpanded",
+          "setUserSetExpanded:",
+          "stereoMixDownMode",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17ModelIconProvider",
+        "methods": []
+      },
+      {
+        "name": "_TtCFC11SoundSource13SSModelSource19setupAlertObserversFT_C7Combine14AnyCancellableL_25AlertObserverCancellables",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource16SSVoiceOverState",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource17SettingsPaneState",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource24SettingsWindowController",
+        "methods": [
+          "rootModel",
+          "setupNewWindow",
+          "showWindow:",
+          "handleWindowKeyEquivalent:in:",
+          "windowStateDidChangeWithWindow:isVisible:appIsActive:frontmostBundleID:",
+          "initWithWindow:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "SSBalanceOrSSPanEffectModel",
+        "methods": [
+          "selectedTitle",
+          "init",
+          "settingsDidChange:",
+          "panValue",
+          "setPanValue:",
+          "balanceValue",
+          "setBalanceValue:",
+          "value",
+          "setValue:",
+          "axValueDescription",
+          "name",
+          "setName:",
+          "balanceSliderValue",
+          "setBalanceSliderValue:",
+          "matchesDescriptor:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21SSApplicationPolicies",
+        "methods": [
+          "implementsUnobtrusiveNotifier",
+          "licenseConfiguration",
+          "multipleInstancesProhibited",
+          "isAppInMenuBarOnly",
+          "registrationAudioTimeLimit",
+          "softwareUpdateURL",
+          "baseBuyURL",
+          "developerNewsURL",
+          "releaseNotesURL",
+          "manualURL",
+          "supportCenterURL",
+          "licenseLimitation",
+          "trialWarning",
+          "upgradablePromoText",
+          "nonNotarizedPluginsKBArticle",
+          "systemPermissions",
+          "helpMenuItems",
+          "userSurveyInfo",
+          "init"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource32NSMenuTrackingSessionInterceptor",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSourceP33_2302D4C53A3499BAAB0B9294D58C4E7F18MenuSelectorTarget",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource12SSNSMenuItem",
+        "methods": [
+          "initWithTitle:action:keyEquivalent:",
+          "initWithCoder:",
+          "dealloc",
+          "isHighlighted"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource14_NSBackingMenu",
+        "methods": [
+          "dummy",
+          "initWithCoder:",
+          "dealloc",
+          "rebuild",
+          "cancelTrackingWithoutAnimation",
+          "removeItem:",
+          "removeItemAtIndex:",
+          "removeAllItems",
+          "cleanup",
+          "initWithTitle:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21MenuItemActionHandler",
+        "methods": [
+          "performActionFor:allowingSubmenuRowAction:",
+          "updateActionFrom:to:",
+          "hasActionFor:",
+          "hasParentActionAlongsideSubmenuFor:",
+          "removeAction:",
+          "menuItemAction:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtCC11SoundSource21MenuItemActionHandler10MenuAction",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource14SSMenuDelegate",
+        "methods": [
+          "menuOpen",
+          "setMenuOpen:",
+          "subMenuOpen",
+          "setSubMenuOpen:",
+          "wrappedDelegate",
+          "setWrappedDelegate:",
+          "wrappingDelegateWithMenu:",
+          "menuWillOpen:",
+          "menuDidClose:",
+          "menu:updateItem:atIndex:shouldCancel:",
+          "menu:willHighlightItem:",
+          "menuNeedsUpdate:",
+          "menuHasKeyEquivalent:forEvent:target:action:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSVolumeOverdriveEffectModel",
+        "methods": [
+          "init",
+          "totalGain",
+          "nodeOverdrive",
+          "setNodeOverdrive:",
+          "enabled",
+          "setEnabled:",
+          "didAddToParent",
+          "updateSourceModel",
+          "removeFromParent",
+          "axValueDescription",
+          "overdriveSelection",
+          "overdrive1x",
+          "overdrive2x",
+          "overdrive3x",
+          "overdrive4x",
+          "selectOverdrive:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_0949DF51D7B9F541101D577D2B6884E437StatusItemExpandedInterfaceController",
+        "methods": [
+          "didBegin",
+          "setDidBegin:",
+          "didEnd",
+          "setDidEnd:",
+          "statusItem:didBeginExpandedInterfaceSession:",
+          "statusItemDidEndExpandedInterfaceSession:animated:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_0949DF51D7B9F541101D577D2B6884E417SSStatusBarButton",
+        "methods": [
+          "mouseDown:",
+          "rightMouseDown:",
+          "mouseUp:",
+          "rightMouseUp:",
+          "draggingEntered:",
+          "draggingUpdated:",
+          "draggingExited:",
+          "performDragOperation:",
+          "hitTest:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21StatusItemInteraction",
+        "methods": [
+          "statusItem",
+          "anchorView",
+          "onExpandedSessionBegin",
+          "setOnExpandedSessionBegin:",
+          "onExpandedSessionEnded",
+          "setOnExpandedSessionEnded:",
+          "onAlternateExpandedSessionBegin",
+          "setOnAlternateExpandedSessionBegin:",
+          "onAlternateExpandedSessionEnded",
+          "setOnAlternateExpandedSessionEnded:",
+          "onRepeatPrimaryClick",
+          "setOnRepeatPrimaryClick:",
+          "onLeftClick",
+          "setOnLeftClick:",
+          "onLeftClickEnded",
+          "setOnLeftClickEnded:",
+          "onRightClick",
+          "setOnRightClick:",
+          "onRightClickEnded",
+          "setOnRightClickEnded:",
+          "isHighlighted",
+          "setIsHighlighted:",
+          "toolTip",
+          "setToolTip:",
+          "installFileDropHandler:",
+          "syntheticExpandedSessionActive",
+          "setSyntheticExpandedSessionActive:",
+          "hasActiveAlternateSession",
+          "setHasActiveAlternateSession:",
+          "hasActiveExpandedSession",
+          "menu",
+          "setMenu:",
+          "alternateMenu",
+          "setAlternateMenu:",
+          "initWithStatusItem:",
+          "dealloc",
+          "requestExpandedSession",
+          "cancelExpandedSessionWithAnimated:",
+          "cancelAlternateExpandedSession",
+          "containsMouse",
+          "activatePrimary",
+          "activateAlternate",
+          "handleButtonAction:",
+          "reclaimsActivationOnPress",
+          "setReclaimsActivationOnPress:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource12StatusButton",
+        "methods": [
+          "statusItem",
+          "interaction",
+          "dealloc",
+          "initializePositionWithAutoSaveName:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource18MarkupFlexHostView",
+        "methods": [
+          "raIsSelfPlaced",
+          "dealloc",
+          "raParentStyles",
+          "raSetInfo:",
+          "viewWillMoveToSuperview:",
+          "viewWillMoveToWindow:",
+          "viewDidMoveToWindow",
+          "updateTrackingAreas",
+          "mouseEntered:",
+          "mouseMoved:",
+          "mouseExited:",
+          "accessibilityChildren",
+          "raSetFrame:",
+          "setFrameSize:",
+          "fittingSize",
+          "layout",
+          "raDidAttachToModel",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource22SSGXDeviceMenuRowModel",
+        "methods": [
+          "displayName",
+          "setDisplayName:",
+          "iconImage",
+          "setIconImage:",
+          "connecting",
+          "setConnecting:",
+          "selected",
+          "setSelected:",
+          "connectionStatus",
+          "setConnectionStatus:",
+          "battery",
+          "setBattery:",
+          "accessibilityValue",
+          "accessibilityHelp",
+          "configureWithDevice:selection:",
+          "setMenuOpen:",
+          "dealloc",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource21SSDeviceBatteryLevels",
+        "methods": [
+          "single",
+          "combined",
+          "left",
+          "right",
+          "caseLevel",
+          "caseSymbolName",
+          "initWithSingle:combined:left:right:caseLevel:caseSymbolName:",
+          "summary",
+          "isEqual:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXDeviceBatteryView",
+        "methods": [
+          "raSetViewValue:",
+          "raMeasureContentSize",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSGXDeviceBatteryPainter",
+        "methods": [
+          "raSetInfo:",
+          "copyWithZone:",
+          "drawInRect:withValue:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource13ACPDeviceLock",
+        "methods": [
+          "device",
+          "setDevice:",
+          "dealloc",
+          "scheduleNotification",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource24SSUserNotificationCenter",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource10SourceList",
+        "methods": [
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource10ModelsList",
+        "methods": [
+          "init",
+          "dealloc",
+          "modelDidCommit:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSAppProfile",
+        "methods": [
+          "init"
+        ]
+      },
+      {
+        "name": "SSQuickConfig",
+        "methods": [
+          "isModifiedWithPrintingChanges:",
+          "gxSelected",
+          "styles",
+          "init",
+          "dealloc",
+          "uuid",
+          "setUuid:",
+          "shortcut",
+          "setShortcut:",
+          "setupShortcut",
+          "name",
+          "setName:",
+          "exclusions",
+          "setExclusions:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "SSOutputGroup",
+        "methods": [
+          "gxTypeSelectLabel",
+          "init",
+          "dealloc",
+          "undoManager",
+          "setUndoManager:",
+          "loadPlist",
+          "setLoadPlist:",
+          "device",
+          "setDevice:",
+          "id",
+          "iconImage",
+          "deviceConnecting",
+          "setDeviceConnecting:",
+          "selected",
+          "setSelected:",
+          "styles",
+          "uuid",
+          "setUuid:",
+          "name",
+          "setName:",
+          "editingName",
+          "setEditingName:",
+          "expandedInMenu",
+          "setExpandedInMenu:",
+          "devices",
+          "setDevices:",
+          "userSetDevicesWithDevices:completionHandler:",
+          "vadNeedsUpdateWithDevicesChanged:",
+          "refreshAfterAudiodRestart",
+          "_updateVADWithCompletionHandler:",
+          "destroyDevice",
+          "volumeControllerWithDevice:",
+          "updateDevicesWithUserDriven:allowAutomaticRetry:completionHandler:",
+          "connectDevicesWithDevices:userDriven:completionHandler:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource17SSOutputGroupList",
+        "methods": [
+          "init",
+          "dealloc",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource10WindowMode",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource13SSPreferences",
+        "methods": [
+          "init",
+          "systemSoundSettingsChange:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource11SSACPDevice",
+        "methods": [
+          "init",
+          "initWithArchive:",
+          "initWithDeviceID:deviceReference:"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSource11SSBluetooth",
+        "methods": [
+          "init",
+          "dealloc",
+          "hasPermissions",
+          "isPoweredOn",
+          "beginVisibleDiscovery",
+          "endVisibleDiscovery",
+          "performScanWithTimeout:",
+          "discoverFor:completionHandler:",
+          "isAdvertisingWithDeviceAddress:",
+          "centralManagerDidUpdateState:",
+          "centralManager:didDiscoverPeripheral:advertisementData:RSSI:",
+          "pairedDevices",
+          "logUnknownW1BTDevices",
+          "bluetoothDevices",
+          "setBluetoothDevices:",
+          "bluetoothDevicesAwaitingConnection",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_1D98F91C6E4771AD758F7F30ABD4F0D316CancellableStore",
+        "methods": []
+      },
+      {
+        "name": "_TtC11SoundSource22GXMarkupDisclosureView",
+        "methods": [
+          "isHidden",
+          "setHidden:",
+          "raIsHidden",
+          "raIsLeaf",
+          "raDesiredSize",
+          "contentHeightForWidth:",
+          "contentWidthForHeight:",
+          "hitTest:",
+          "raSetFrame:",
+          "raSetOpacity:",
+          "viewDidHide",
+          "viewDidUnhide",
+          "raLoadChildren",
+          "raUpdateCustom",
+          "raSetHidden:animated:",
+          "raSetHidden:",
+          "initWithFrame:",
+          "initWithCoder:",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_EFC45FF2D7E3A44EAC273A9E3DE7222514ClipAwayPoller",
+        "methods": [
+          "initWithDisclosure:",
+          "animateFrame:shouldStop:",
+          "init",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "GXHotkeyRecorderEnabledHostView",
+        "methods": [
+          "isAccessibilityElement",
+          "accessibilityTitle",
+          "raSetEnabled:",
+          "raSetInfo:",
+          "initWithFrame:",
+          "initWithCoder:"
+        ]
+      },
+      {
+        "name": "GXHotkeyRecorderView",
+        "methods": [
+          "initWithFrame:",
+          "initWithCoder:",
+          "dealloc",
+          "modelDidChange:",
+          "raSetEnabled:",
+          "raSetInfo:",
+          "raUpdateCustom",
+          "viewDidMoveToWindow",
+          "viewDidUnhide",
+          "viewDidHide",
+          "acceptsFirstResponder",
+          "resignFirstResponder",
+          "cancelOperation:",
+          "canBecomeKeyView",
+          "acceptsFirstMouse:",
+          "hitTest:",
+          "mouseDown:",
+          "performKeyEquivalent:",
+          "isAccessibilityElement",
+          "accessibilityRole",
+          "accessibilityRoleDescription",
+          "accessibilityChildren",
+          "accessibilityTitle",
+          "accessibilityLabel",
+          "accessibilityValue",
+          "accessibilityHelp",
+          "accessibilityPerformPress",
+          "accessibilityCustomActions",
+          ".cxx_destruct"
+        ]
+      },
+      {
+        "name": "_TtC11SoundSourceP33_697E206832ECBD9ACE42E94863A8D20119ResourceBundleClass",
+        "methods": []
+      }
+    ],
+    "coverage": [
+      {
+        "facet": "objc_class_method_ivar_metadata",
+        "status": "partial",
+        "examined": 344,
+        "decoded": 688
+      },
+      {
+        "facet": "binary_relative_pointers",
+        "status": "partial",
+        "examined": 10398,
+        "decoded": 10398
+      },
+      {
+        "facet": "objc_properties_categories",
+        "status": "partial",
+        "examined": 34,
+        "decoded": 31
+      },
+      {
+        "facet": "pointer_fixups",
+        "status": "complete",
+        "examined": 2,
+        "decoded": 2
+      },
+      {
+        "facet": "swift_generic_resilient_witnesses_overrides_async_coroutines",
+        "status": "unsupported",
+        "examined": 0,
+        "decoded": 0
+      },
+      {
+        "facet": "swift_conformances_static_witness_slots",
+        "status": "partial",
+        "examined": 787,
+        "decoded": 128
+      },
+      {
+        "facet": "swift_class_vtable_descriptors",
+        "status": "partial",
+        "examined": 0,
+        "decoded": 0
+      }
+    ]
+  }
+]
