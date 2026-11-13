@@ -12,7 +12,7 @@ Ngày: 13/11/2026. Máy phát triển Apple Silicon, macOS 27.2.1; Swift 6.4.2 C
 
 ## Runtime quan sát trực tiếp
 
-Nguồn thử: `afplay` phát file Float PCM từ tone stereo nhỏ, không phải âm thanh cá nhân. Chỉ bật mixer cho process thử; Chrome đang phát được liệt kê nhưng không bị capture/điều khiển.
+Nguồn thử: `afplay` phát tone stereo nhỏ từ WAV PCM 16-bit; dữ liệu tới callback qua HAL là Float32. Không dùng âm thanh cá nhân. Chỉ bật mixer cho process thử; Chrome đang phát được liệt kê nhưng không bị capture/điều khiển.
 
 1. App mở cửa sổ mixer, đọc đúng thiết bị output/input và danh sách process. Không có Dock icon là chủ ý.
 2. Headphone Lenovo và MacBook Pro Speakers đều có output 44.100 Hz. Microphone Lenovo có 16.000 Hz; microphone tích hợp có 48.000 Hz. Không thay đổi default device hoặc sample rate phần cứng trong phép thử.
@@ -24,6 +24,10 @@ Nguồn thử: `afplay` phát file Float PCM từ tone stereo nhỏ, không ph�
 8. Bấm Trả về âm gốc: Mixer tắt, volume riêng disable, trạng thái về âm gốc. HAL inventory sau stop không có aggregate của My Sound Control. Không ghi nhận lỗi cleanup trong unified log.
 
 Không có prompt TCC mới xuất hiện trong lần thử thành công. Chưa kiểm tra permission denial, cấp quyền trên máy sạch hoặc permission sau thay chữ ký ad-hoc.
+
+## Đóng gói cục bộ
+
+Release build arm64, DMG và ZIP đã tạo thành công. SHA256SUMS kiểm tra qua; `hdiutil verify` xác nhận checksum DMG hợp lệ. Đã mount DMG chỉ đọc và trích ZIP để xác minh signature strict, binary giống bản build, version và source revision trong Info.plist. DMG có shortcut Applications. Đây là kiểm tra asset cục bộ, chưa thay thế cài bản tải xuống trên máy sạch.
 
 ## Cần thử thêm
 
