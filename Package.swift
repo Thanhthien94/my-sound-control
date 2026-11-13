@@ -7,8 +7,10 @@ let package = Package(
     products: [.executable(name: "MySoundControl", targets: ["MySoundControl"])],
     targets: [
         .target(name: "AudioDSP", linkerSettings: [.linkedFramework("CoreAudio")]),
-        .executableTarget(name: "MySoundControl", dependencies: ["AudioDSP"]),
-        .testTarget(name: "AudioDSPTests", dependencies: ["AudioDSP"])
+        .target(name: "MixerLogic"),
+        .executableTarget(name: "MySoundControl", dependencies: ["AudioDSP", "MixerLogic"]),
+        .testTarget(name: "AudioDSPTests", dependencies: ["AudioDSP"]),
+        .testTarget(name: "MixerLogicTests", dependencies: ["MixerLogic"])
     ],
     swiftLanguageModes: [.v5]
 )

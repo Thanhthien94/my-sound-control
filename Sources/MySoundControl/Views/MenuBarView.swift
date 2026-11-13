@@ -22,6 +22,7 @@ struct MenuBarView: View {
             Button("Trả tất cả về âm gốc") { store.stopAll() }.disabled(store.activeIDs.isEmpty && store.pendingCleanupCount == 0)
             Divider()
             HStack {
+                SettingsLink { Text("Cài đặt…") }
                 Button("Thông tin") {
                     NSApp.orderFrontStandardAboutPanel(options: [
                         .applicationName: "My Sound Control",

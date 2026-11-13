@@ -35,5 +35,7 @@ struct MySoundControlApp: App {
         MenuBarExtra("My Sound Control", systemImage: "slider.horizontal.3") {
             MenuBarView(store: store)
         }.menuBarExtraStyle(.window)
+
+        Settings { SettingsView() }
     }
 }

@@ -1,4 +1,14 @@
-# Validation — 0.1.0-preview.1
+# Validation
+
+## 0.1.0-preview.3 — 13/11/2026
+
+- Cài ZIP của preview.2 tải từ GitHub vào `/Applications/MySoundControl.app`; checksum, signature strict và mở chạy qua.
+- 12 tests qua: 8 DSP và 4 timer lifecycle tests dùng ContinuousClock với thời điểm truyền vào, không cần chờ thực.
+- Debug build, launch, UI Settings và kiểm tra signature qua. Tùy chọn login bị disable đúng trên bản ngoài Applications, mặc định off; chưa đăng ký login item hoặc thử reboot.
+- CUA bật riêng mixer của nguồn `afplay` WAV stereo nhỏ: meter khoảng −50 dBFS. Hẹn 30 giây hiển thị đếm ngược và meter −∞ dBFS. Một lượt đọc sau quan sát volume/meter phục hồi, nhưng CUA có timeout xen giữa; chưa ghi nhận là phép đo thời gian end-to-end hoàn chỉnh. Nút bật tiếng ngay chưa xác minh runtime đầy đủ.
+- Không điều khiển Chrome đang phát. Hẹn giờ không lưu vào preferences; logic hủy khi dừng và thay deadline được kiểm tra tự động.
+
+## Baseline 0.1.0-preview.1
 
 Ngày: 13/11/2026. Máy phát triển Apple Silicon, macOS 27.2.1; Swift 6.4.2 CLT, SDK 26.5. Mức tương thích tối thiểu trong bundle là macOS 15, chưa thử máy macOS 15 thực tế.
 

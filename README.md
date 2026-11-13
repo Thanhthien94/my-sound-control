@@ -5,9 +5,13 @@
 - [Phân tích SoundSource bằng REA](docs/soundsource-analysis.vi.md)
 - [Bằng chứng và nguồn nghiên cứu](docs/research/)
 
-## 0.1.0-preview.2
+## 0.1.0-preview.3
 
 Logo waveform/fader theo palette SkyTruong, cùng phong cách My Fan Control; bộ icon macOS và logo trong cửa sổ mixer đã tích hợp.
+
+- Tạm tắt tiếng từng app trong 30 giây, 1 phút hoặc 2 phút; đếm ngược và bật tiếng ngay. Hết giờ khôi phục volume hiện tại qua gain ramp có sẵn.
+- Cài đặt khởi động cùng macOS qua ServiceManagement, mặc định tắt. Mở bản trong Applications để thay đổi; Mixer vẫn bật thủ công.
+- Hẹn giờ chỉ thuộc phiên hiện tại; tắt Mixer, đổi đầu ra, sleep hoặc thoát app sẽ hủy hẹn giờ và trả âm gốc.
 
 - Menu bar và cửa sổ mixer tiếng Việt; không có icon Dock.
 - Chọn thiết bị output, microphone, thông báo; volume/mute phần cứng khi có master control.
@@ -15,7 +19,7 @@ Logo waveform/fader theo palette SkyTruong, cùng phong cách My Fan Control; b�
 - Favorites và lưu thiết lập cục bộ; không tự bật lại capture sau mỗi lần mở app.
 - Gain ramp 5 ms; callback C không cấp phát/khóa/log. Dừng phiên khi buffer, thiết bị hoặc process thay đổi.
 
-Preview giới hạn Float32 stereo input, mono/stereo output cùng sample rate. Thiết bị duplex/multichannel có thể bị từ chối; browser helper có thể hiện thành process riêng. Chưa EQ/boost/AU/hotkeys/timed mute/AirPlay đa thiết bị. DSP tests không thay thế thử audio thực tế.
+Preview giới hạn Float32 stereo input, mono/stereo output cùng sample rate. Thiết bị duplex/multichannel có thể bị từ chối; browser helper có thể hiện thành process riêng. Chưa EQ/boost/AU/hotkeys/AirPlay đa thiết bị. DSP tests không thay thế thử audio thực tế.
 
 ## Build và chạy
 

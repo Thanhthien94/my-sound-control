@@ -2,6 +2,7 @@ import AppKit
 import Combine
 import CoreAudio
 import OSLog
+import MixerLogic
 
 @MainActor
 final class MixerStore: ObservableObject {
@@ -16,12 +17,14 @@ final class MixerStore: ObservableObject {
     @Published private(set) var peaks: [String: Float] = [:]
     @Published private(set) var appErrors: [String: String] = [:]
     @Published private(set) var pendingCleanupCount = 0
+    @Published private(set) var muteSecondsRemaining: [String: Int] = [:]
     @Published var errorMessage: String?
     private var sessions: [String: ProcessAudioSession] = [:]
     private var pendingCleanup: [ProcessAudioSession] = []
     private var timer: Timer?
     private var sleepObserver: NSObjectProtocol?
     private var tick = 0
+    private var timedMutes = TimedMutes()
     private var idleSince: [String: Date] = [:]
     private var lastCycles: [String: UInt64] = [:]
     private let log = Logger(subsystem: "vn.thiendev.mysoundcontrol", category: "Mixer")
@@ -37,12 +40,14 @@ final class MixerStore: ObservableObject {
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
             Task { @MainActor in
                 guard let self else { return }
+                self.advanceTimedMutes()
                 let levels = self.sessions.mapValues(\.peak)
                 if self.peaks != levels { self.peaks = levels }
                 self.tick += 1
                 if self.tick % 10 == 0 { self.refresh() }
             }
         }
+        if let timer { RunLoop.main.add(timer, forMode: .common) }
         sleepObserver = NSWorkspace.shared.notificationCenter.addObserver(forName: NSWorkspace.willSleepNotification, object: nil, queue: .main) { [weak self] _ in
             Task { @MainActor in self?.stopAll() }
         }
@@ -52,14 +57,54 @@ final class MixerStore: ObservableObject {
 
     func update(_ id: String, _ body: (inout MixerPreference) -> Void) {
         var value = preference(id)
+        let wasMuted = value.muted
         body(&value)
+        if value.muted != wasMuted { cancelTimedMute(id) }
         value.volume = value.volume.isFinite ? max(0, min(1, value.volume)) : 1
         preferences[id] = value
-        sessions[id]?.setGain(Float(value.muted ? 0 : value.volume))
+        applyGain(id)
         // PIDs are reused by macOS. Never restore a process-only preference onto
         // an unrelated application after relaunch; only bundle identities persist.
         do { UserDefaults.standard.set(try JSONEncoder().encode(preferences.filter { !$0.key.hasPrefix("pid:") }), forKey: preferenceKey) }
         catch { report(error) }
+    }
+
+    func isMuted(_ id: String) -> Bool {
+        preference(id).muted || muteSecondsRemaining[id] != nil
+    }
+
+    func toggleApplicationMute(_ id: String) {
+        let shouldMute = !isMuted(id)
+        cancelTimedMute(id)
+        update(id) { $0.muted = shouldMute }
+    }
+
+    func muteTemporarily(_ id: String, seconds: Int) {
+        guard activeIDs.contains(id), !preference(id).muted, [30, 60, 120].contains(seconds) else { return }
+        timedMutes.start(id, seconds: seconds)
+        muteSecondsRemaining = timedMutes.remaining()
+        applyGain(id)
+    }
+
+    func unmuteNow(_ id: String) {
+        cancelTimedMute(id)
+        update(id) { $0.muted = false }
+    }
+
+    private func cancelTimedMute(_ id: String) {
+        timedMutes.cancel(id)
+        muteSecondsRemaining[id] = nil
+    }
+
+    private func advanceTimedMutes() {
+        let expired = timedMutes.expire()
+        let remaining = timedMutes.remaining()
+        if muteSecondsRemaining != remaining { muteSecondsRemaining = remaining }
+        for id in expired { applyGain(id) }
+    }
+
+    private func applyGain(_ id: String) {
+        sessions[id]?.setGain(Float(isMuted(id) ? 0 : preference(id).volume))
     }
 
     func refresh() {
@@ -162,6 +207,7 @@ final class MixerStore: ObservableObject {
     }
 
     func disable(_ id: String) {
+        cancelTimedMute(id)
         guard let session = sessions.removeValue(forKey: id) else { return }
         activeIDs.remove(id)
         peaks[id] = nil
@@ -179,6 +225,8 @@ final class MixerStore: ObservableObject {
     }
 
     func stopAll() {
+        timedMutes.cancelAll()
+        muteSecondsRemaining = [:]
         for id in Array(sessions.keys) { disable(id) }
         var remaining: [ProcessAudioSession] = []
         for session in pendingCleanup {

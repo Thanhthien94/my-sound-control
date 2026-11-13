@@ -62,6 +62,7 @@ struct MixerView: View {
                       systemImage: store.activeIDs.isEmpty ? "speaker.wave.2" : "waveform")
                     .font(.caption).foregroundStyle(.secondary)
                 Spacer()
+                SettingsLink { Image(systemName: "gearshape") }.help("Cài đặt")
                 Button("Trả về âm gốc") { store.stopAll() }.disabled(store.activeIDs.isEmpty && store.pendingCleanupCount == 0)
                 Button { store.refresh() } label: { Image(systemName: "arrow.clockwise") }.help("Làm mới")
             }.padding(14)

@@ -29,9 +29,19 @@ struct ApplicationRow: View {
                     .toggleStyle(.switch).controlSize(.small).fixedSize()
             }
             HStack(spacing: 10) {
-                Button { store.update(app.id) { $0.muted.toggle() } } label: {
-                    Image(systemName: preference.muted && active ? "speaker.slash.fill" : "speaker.wave.2")
+                Button { store.toggleApplicationMute(app.id) } label: {
+                    Image(systemName: store.isMuted(app.id) && active ? "speaker.slash.fill" : "speaker.wave.2")
                 }.disabled(!active).help("Bật/tắt tiếng \(app.name)")
+                Menu {
+                    Button("30 giây") { store.muteTemporarily(app.id, seconds: 30) }
+                    Button("1 phút") { store.muteTemporarily(app.id, seconds: 60) }
+                    Button("2 phút") { store.muteTemporarily(app.id, seconds: 120) }
+                } label: {
+                    Label("Tạm tắt tiếng \(app.name)", systemImage: "timer").labelStyle(.iconOnly)
+                }.menuStyle(.borderlessButton).fixedSize()
+                    .disabled(!active || preference.muted)
+                    .help("Tạm tắt tiếng \(app.name)")
+                    .accessibilityLabel("Tạm tắt tiếng \(app.name)")
                 Slider(value: Binding(get: { preference.volume }, set: { value in store.update(app.id) { $0.volume = value } }), in: 0...1)
                     .disabled(!active).accessibilityLabel("Âm lượng \(app.name)")
                 Text(active ? "\(Int((preference.volume * 100).rounded()))%" : "—")
@@ -43,6 +53,14 @@ struct ApplicationRow: View {
                         Text("Thiết bị đã ngắt").tag(preference.outputUID)
                     }
                 }.labelsHidden().frame(width: 210)
+            }
+            if let seconds = store.muteSecondsRemaining[app.id] {
+                HStack {
+                    Label("Bật tiếng sau \(seconds / 60):\(String(format: "%02d", seconds % 60))", systemImage: "timer")
+                        .font(.caption.monospacedDigit()).foregroundStyle(.secondary)
+                    Button("Bật tiếng ngay") { store.unmuteNow(app.id) }
+                        .font(.caption)
+                }
             }
             if active {
                 HStack(spacing: 8) {
